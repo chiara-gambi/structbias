@@ -1,0 +1,11 @@
+subject_id,trial_number,trial_id,target_sentence,question,target_side,other_side,trial_type,date_stamp,time_stamp,side_chosen,accuracy,rt,play_counter,date_of_birth,native_lang,other_langs,dev_info,gender,order,sentence_type,animacy
+OwZ5WLm5w1MukPIJdwW9D1t4f,1,2FillerPre2,The_boy_will_put_the_train_in_the_box,Can_you_put_the_train_in_the_box?,right,left,pretest_filler,4/16/2019,14:48,right,1,2368.104,1,08/09/2014,English,,,male,Pre,PO,NonPred
+OwZ5WLm5w1MukPIJdwW9D1t4f,2,3FillerPre2,The_girl_will_move_the_hat_to_the_table,Can_you_move_the_hat_to_the_table?,left,right,pretest_filler,4/16/2019,14:48,left,1,2047.104,1,41890,English,,,male,Pre,PO,NonPred
+OwZ5WLm5w1MukPIJdwW9D1t4f,3,3Pre2,Peppa_Pig_will_send_the_hamster_a_toy,Can_you_send_the_hamster_the_toy?,right,left,pretest,4/16/2019,14:48,right,1,2092.104,1,41890,English,,,male,Pre,PO,NonPred
+OwZ5WLm5w1MukPIJdwW9D1t4f,4,1FillerPre2,Peppa_pig_will_bounce_the_ball_with_the_bat,Can_you_bounce_the_ball_with_the_bat?,left,right,pretest_filler,4/16/2019,14:48,right,0,1152.104,1,41890,English,,,male,Pre,PO,NonPred
+OwZ5WLm5w1MukPIJdwW9D1t4f,5,2Pre2,The_girl_will_throw_the_elephant_a_clock,Can_you_throw_the_elephant_the_clock?,right,left,pretest,4/16/2019,14:48,left,0,1226.104,1,41890,English,,,male,Pre,PO,NonPred
+OwZ5WLm5w1MukPIJdwW9D1t4f,6,1Pre2,The_boy_will_bring_the_giraffe_a_cake,Can_you_bring_the_giraffe_the_cake?,left,right,pretest,4/16/2019,14:48,left,1,1268.104,1,41890,English,,,male,Pre,PO,NonPred
+OwZ5WLm5w1MukPIJdwW9D1t4f,7,4FillerPre2,The_king_will_poke_the_jelly_with_the_fork,Can_you_poke_the_jelly_with_the_fork?,right,left,pretest_filler,4/16/2019,14:48,left,0,1963.104,1,41890,English,,,male,Pre,PO,NonPred
+OwZ5WLm5w1MukPIJdwW9D1t4f,8,4Pre2,The_king_will_throw_the_turtle_a_squirrel,Can_you_throw_the_turtle_the_squirrel?,left,right,pretest,4/16/2019,14:48,right,0,1782.104,1,41890,English,,,male,Pre,PO,NonPred
+OwZ5WLm5w1MukPIJdwW9D1t4f,9,5Pre2,The_queen_will_send_the_monkey_a_horse,Can_you_send_the_monkey_the_horse?,left,right,pretest,4/16/2019,14:48,left,1,2046.104,1,41890,English,,,male,Pre,PO,NonPred
+OwZ5WLm5w1MukPIJdwW9D1t4f,10,6Pre2,Emily_elephant_will_bring_the_mouse_a_rabbit,Can_you_bring_the_mouse_the_rabbit?,right,left,pretest,4/16/2019,14:48,left,0,246.104,1,41890,English,,,male,Pre,PO,NonPred

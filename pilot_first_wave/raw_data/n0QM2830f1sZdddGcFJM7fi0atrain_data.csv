@@ -1,0 +1,13 @@
+subject_id,trial_number,trial_id,target_sentence,target_side,other_side,trial_type,date_stamp,time_stamp,side_chosen,accuracy,rt,play_counter,order,sentence_type,animacy
+n0QM2830f1sZdddGcFJM7fi0a,1,5pop,The_girl_will_pass_the_dress_to_the_sheep,right,left,training,7/18/2019,11:09,right,1,6329.342000000001,1,Post,PO,Pred
+n0QM2830f1sZdddGcFJM7fi0a,2,4pop,George_will_send_the_brush_to_the_donkey,right,left,training,7/18/2019,11:09,right,1,1668.3420000000006,1,Post,PO,Pred
+n0QM2830f1sZdddGcFJM7fi0a,3,11pop,Marshall_will_pass_the_gloves_to_the_bee,left,right,training,7/18/2019,11:09,left,1,1446.3420000000006,1,Post,PO,Pred
+n0QM2830f1sZdddGcFJM7fi0a,4,9pop,Dora_the_explorer_will_bring_the_spoon_to_the_hippo,left,right,training,7/18/2019,11:09,left,1,4374.342000000001,1,Post,PO,Pred
+n0QM2830f1sZdddGcFJM7fi0a,5,6pop,Piglet_will_show_the_plate_to_the_fish,right,left,training,7/18/2019,11:09,right,1,1783.3420000000006,1,Post,PO,Pred
+n0QM2830f1sZdddGcFJM7fi0a,6,1pop,The_boy_will_throw_the_cheese_to_the_bear,right,left,training,7/18/2019,11:09,right,1,3443.3420000000006,1,Post,PO,Pred
+n0QM2830f1sZdddGcFJM7fi0a,7,2pop,Tigger_will_give_the_bottle_to_the_zebra,left,right,training,7/18/2019,11:09,left,1,1791.3420000000006,1,Post,PO,Pred
+n0QM2830f1sZdddGcFJM7fi0a,8,7pop,Bob_the_builder_will_throw_the_shoe_to_the_penguin,left,right,training,7/18/2019,11:09,left,1,863.3420000000006,1,Post,PO,Pred
+n0QM2830f1sZdddGcFJM7fi0a,9,8pop,Chase_will_give_the_biscuit_to_the_kitten,right,left,training,7/18/2019,11:09,right,1,3576.3420000000006,1,Post,PO,Pred
+n0QM2830f1sZdddGcFJM7fi0a,10,10pop,Boots_will_send_the_flower_to_the_caterpillar,right,left,training,7/18/2019,11:09,right,1,3285.3420000000006,1,Post,PO,Pred
+n0QM2830f1sZdddGcFJM7fi0a,11,12pop,Winnie_the_pooh_will_show_the_frisbee_to_the_duck,left,right,training,7/18/2019,11:09,left,1,854.3420000000006,1,Post,PO,Pred
+n0QM2830f1sZdddGcFJM7fi0a,12,3pop,Rebecca_Rabbit_will_bring_the_pencil_to_the_chicken,left,right,training,7/18/2019,11:09,right,0,3133.3420000000006,1,Post,PO,Pred

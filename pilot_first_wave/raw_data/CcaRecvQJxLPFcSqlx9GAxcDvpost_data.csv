@@ -1,0 +1,11 @@
+subject_id,trial_number,trial_id,target_sentence,question,target_side,other_side,trial_type,date_stamp,time_stamp,side_chosen,accuracy,rt,play_counter,date_of_birth,native_lang,other_langs,dev_info,gender,order,sentence_type,animacy
+CcaRecvQJxLPFcSqlx9GAxcDv,1,4fillerpost2,The_prince_will_move_the_blanket_to_the_sofa,Can_you_move_the_blanket_to_the_sofa?,right,left,posttest_filler,7/17/2019,10:36,right,1,2834.135,1,24/09/2014,English,,,male,Post,DO,Pred
+CcaRecvQJxLPFcSqlx9GAxcDv,2,3fillerpost2,Dora_the_explorer_will_put_the_food_in_the_basket,Can_you_put_the_food_in_the_basket?,left,right,posttest_filler,7/17/2019,10:36,left,1,1444.135,1,24/09/2014,English,,,male,Post,DO,Pred
+CcaRecvQJxLPFcSqlx9GAxcDv,3,5Pre2,The_queen_will_send_the_monkey_a_horse,Can_you_send_the_monkey_the_horse?,left,right,pretest,7/17/2019,10:36,right,0,1462.135,1,24/09/2014,English,,,male,Post,DO,Pred
+CcaRecvQJxLPFcSqlx9GAxcDv,4,1Pre2,The_boy_will_bring_the_giraffe_a_cake,Can_you_bring_the_giraffe_the_cake?,left,right,pretest,7/17/2019,10:36,right,0,2229.135,1,24/09/2014,English,,,male,Post,DO,Pred
+CcaRecvQJxLPFcSqlx9GAxcDv,5,2Pre2,The_girl_will_throw_the_elephant_a_clock,Can_you_throw_the_elephant_the_clock?,right,left,pretest,7/17/2019,10:36,right,1,3520.135,1,24/09/2014,English,,,male,Post,DO,Pred
+CcaRecvQJxLPFcSqlx9GAxcDv,6,3Pre2,Peppa_Pig_will_send_the_hamster_a_toy,Can_you_send_the_hamster_the_toy?,left,right,pretest,7/17/2019,10:36,left,1,1684.135,1,24/09/2014,English,,,male,Post,DO,Pred
+CcaRecvQJxLPFcSqlx9GAxcDv,7,6Pre2,Emily_elephant_will_bring_the_mouse_a_rabbit,Can_you_bring_the_mouse_the_rabbit?,right,left,pretest,7/17/2019,10:36,right,1,1753.135,1,24/09/2014,English,,,male,Post,DO,Pred
+CcaRecvQJxLPFcSqlx9GAxcDv,8,4Pre2,The_king_will_throw_the_turtle_a_squirrel,Can_you_throw_the_turtle_the_squirrel?,left,right,pretest,7/17/2019,10:36,right,0,1294.135,1,24/09/2014,English,,,male,Post,DO,Pred
+CcaRecvQJxLPFcSqlx9GAxcDv,9,1FillerPre2,Peppa_pig_will_bounce_the_ball_with_the_bat,Can_you_bounce_the_ball_with_the_bat?,right,left,pretest_filler,7/17/2019,10:36,left,0,5402.135,1,24/09/2014,English,,,male,Post,DO,Pred
+CcaRecvQJxLPFcSqlx9GAxcDv,10,4FillerPre2,The_king_will_poke_the_jelly_with_the_fork,Can_you_poke_the_jelly_with_the_fork?,right,left,pretest_filler,7/17/2019,10:36,right,1,4225.135,1,24/09/2014,English,,,male,Post,DO,Pred

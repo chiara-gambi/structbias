@@ -1,0 +1,13 @@
+subject_id,trial_number,trial_id,target_sentence,target_side,other_side,trial_type,date_stamp,time_stamp,side_chosen,accuracy,rt,play_counter,order,sentence_type,animacy
+nrCMCkzz8Z11gob77BOykNGNW,1,1doup,The_boy_will_throw_the_bear_the_dinosaur,left,right,training,6/28/2019,11:08,left,1,3800.84,1,Pre,DO,NonPred
+nrCMCkzz8Z11gob77BOykNGNW,2,8doup,Chase_will_give_the_kitten_the_deer,right,left,training,6/28/2019,11:08,right,1,3828.84,1,Pre,DO,NonPred
+nrCMCkzz8Z11gob77BOykNGNW,3,3doup,Rebecca_Rabbit_will_bring_the_chicken_the_frog,right,left,training,6/28/2019,11:08,right,1,2479.84,1,Pre,DO,NonPred
+nrCMCkzz8Z11gob77BOykNGNW,4,7doup,Bob_the_builder_will_throw_the_penguin_the_dog,left,right,training,6/28/2019,11:08,left,1,7163.84,1,Pre,DO,NonPred
+nrCMCkzz8Z11gob77BOykNGNW,5,2doup,Tigger_will_give_the_zebra_the_butterfly,left,right,training,6/28/2019,11:08,left,1,3435.84,1,Pre,DO,NonPred
+nrCMCkzz8Z11gob77BOykNGNW,6,9doup,Dora_the_explorer_will_bring_the_hippo_the_cow,right,left,training,6/28/2019,11:08,right,1,5516.84,1,Pre,DO,NonPred
+nrCMCkzz8Z11gob77BOykNGNW,7,12doup,Winnie_the_pooh_will_show_the_duck_the_owl,left,right,training,6/28/2019,11:08,left,1,4696.84,1,Pre,DO,NonPred
+nrCMCkzz8Z11gob77BOykNGNW,8,4doup,George_will_send_the_donkey_the_fox,left,right,training,6/28/2019,11:08,left,1,2920.84,1,Pre,DO,NonPred
+nrCMCkzz8Z11gob77BOykNGNW,9,6doup,Piglet_will_show_the_fish_the_ant,right,left,training,6/28/2019,11:08,right,1,12993.84,1,Pre,DO,NonPred
+nrCMCkzz8Z11gob77BOykNGNW,10,5doup,The_girl_will_pass_the_sheep_the_bird,right,left,training,6/28/2019,11:08,right,1,7125.84,1,Pre,DO,NonPred
+nrCMCkzz8Z11gob77BOykNGNW,11,11doup,Marshall_will_pass_the_bee_the_goat,right,left,training,6/28/2019,11:08,right,1,4133.84,1,Pre,DO,NonPred
+nrCMCkzz8Z11gob77BOykNGNW,12,10doup,Boots_will_send_the_caterpillar_to_the_pig,left,right,training,6/28/2019,11:08,left,1,3654.84,1,Pre,DO,NonPred

@@ -1,0 +1,13 @@
+subject_id,trial_number,trial_id,target_sentence,target_side,other_side,trial_type,date_stamp,time_stamp,side_chosen,accuracy,rt,play_counter,order,sentence_type,animacy
+xwapHzqI3qzx3fB5nw4MrbIbL,1,3pop,Rebecca_Rabbit_will_bring_the_pencil_to_the_chicken,left,right,training,7/1/2019,13:27,left,1,3765.9879999999994,1,Pre,PO,Pred
+xwapHzqI3qzx3fB5nw4MrbIbL,2,10pop,Boots_will_send_the_flower_to_the_caterpillar,right,left,training,7/1/2019,13:27,right,1,4932.987999999999,1,Pre,PO,Pred
+xwapHzqI3qzx3fB5nw4MrbIbL,3,6pop,Piglet_will_show_the_plate_to_the_fish,left,right,training,7/1/2019,13:27,left,1,2173.9879999999994,1,Pre,PO,Pred
+xwapHzqI3qzx3fB5nw4MrbIbL,4,9pop,Dora_the_explorer_will_bring_the_spoon_to_the_hippo,right,left,training,7/1/2019,13:27,right,1,7717.987999999999,1,Pre,PO,Pred
+xwapHzqI3qzx3fB5nw4MrbIbL,5,4pop,George_will_send_the_brush_to_the_donkey,right,left,training,7/1/2019,13:27,right,1,4390.987999999999,1,Pre,PO,Pred
+xwapHzqI3qzx3fB5nw4MrbIbL,6,11pop,Marshall_will_pass_the_gloves_to_the_bee,left,right,training,7/1/2019,13:27,left,1,2477.9879999999994,1,Pre,PO,Pred
+xwapHzqI3qzx3fB5nw4MrbIbL,7,12pop,Winnie_the_pooh_will_show_the_frisbee_to_the_duck,left,right,training,7/1/2019,13:27,right,0,8771.988,1,Pre,PO,Pred
+xwapHzqI3qzx3fB5nw4MrbIbL,8,8pop,Chase_will_give_the_biscuit_to_the_kitten,right,left,training,7/1/2019,13:27,left,0,2283.9879999999994,1,Pre,PO,Pred
+xwapHzqI3qzx3fB5nw4MrbIbL,9,5pop,The_girl_will_pass_the_dress_to_the_sheep,right,left,training,7/1/2019,13:27,right,1,3699.9879999999994,1,Pre,PO,Pred
+xwapHzqI3qzx3fB5nw4MrbIbL,10,1pop,The_boy_will_throw_the_cheese_to_the_bear,left,right,training,7/1/2019,13:27,left,1,8816.988,1,Pre,PO,Pred
+xwapHzqI3qzx3fB5nw4MrbIbL,11,7pop,Bob_the_builder_will_throw_the_shoe_to_the_penguin,left,right,training,7/1/2019,13:27,left,1,3421.9879999999994,1,Pre,PO,Pred
+xwapHzqI3qzx3fB5nw4MrbIbL,12,2pop,Tigger_will_give_the_bottle_to_the_zebra,right,left,training,7/1/2019,13:27,left,0,2584.9879999999994,1,Pre,PO,Pred

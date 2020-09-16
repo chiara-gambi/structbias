@@ -1,0 +1,13 @@
+subject_id,trial_number,trial_id,target_sentence,target_side,other_side,trial_type,date_stamp,time_stamp,side_chosen,accuracy,rt,play_counter,order,sentence_type,animacy
+riB6lBuc3jszgblVsnwJLcqeM,1,1dop,The_boy_will_throw_the_bear_the_cheese,left,right,training,7/17/2019,14:31,left,1,10304.661,1,Pre,DO,Pred
+riB6lBuc3jszgblVsnwJLcqeM,2,10dop,Boots_will_send_the_caterpillar_the_flower,right,left,training,7/17/2019,14:31,right,1,2570.661,1,Pre,DO,Pred
+riB6lBuc3jszgblVsnwJLcqeM,3,4dop,George_will_send_the_donkey_the_brush,left,right,training,7/17/2019,14:31,left,1,2518.661,1,Pre,DO,Pred
+riB6lBuc3jszgblVsnwJLcqeM,4,3dop,Rebecca_Rabbit_will_bring_the_chicken_the_pencil,right,left,training,7/17/2019,14:31,right,1,1926.661,1,Pre,DO,Pred
+riB6lBuc3jszgblVsnwJLcqeM,5,7dop,Bob_the_builder_will_throw_the_penguin_the_shoe,left,right,training,7/17/2019,14:31,right,0,1644.661,1,Pre,DO,Pred
+riB6lBuc3jszgblVsnwJLcqeM,6,6dop,Piglet_will_show_the_fish_the_plate,left,right,training,7/17/2019,14:31,left,1,1066.661,1,Pre,DO,Pred
+riB6lBuc3jszgblVsnwJLcqeM,7,8dop,Chase_will_give_the_kitten_the_bisuit,right,left,training,7/17/2019,14:31,right,1,4067.661,1,Pre,DO,Pred
+riB6lBuc3jszgblVsnwJLcqeM,8,9dop,Dora_the_explorer_will_bring_the_hippo_the_spoon,right,left,training,7/17/2019,14:31,right,1,3304.661,1,Pre,DO,Pred
+riB6lBuc3jszgblVsnwJLcqeM,9,12dop,Winnie_the_pooh_will_show_the_duck_the_frisbee,right,left,training,7/17/2019,14:31,right,1,7305.661,1,Pre,DO,Pred
+riB6lBuc3jszgblVsnwJLcqeM,10,11dop,Marshall_will_pass_the_bee_the_gloves,right,left,training,7/17/2019,14:31,right,1,3249.661,1,Pre,DO,Pred
+riB6lBuc3jszgblVsnwJLcqeM,11,5dop,The_girl_will_pass_the_sheep_the_dress,left,right,training,7/17/2019,14:31,right,0,2563.661,2,Pre,DO,Pred
+riB6lBuc3jszgblVsnwJLcqeM,12,2dop,Tigger_will_give_the_zebra_the_bottle,left,right,training,7/17/2019,14:31,left,1,4601.661,1,Pre,DO,Pred

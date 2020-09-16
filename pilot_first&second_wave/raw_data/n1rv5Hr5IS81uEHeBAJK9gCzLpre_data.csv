@@ -1,0 +1,11 @@
+subject_id,trial_number,trial_id,target_sentence,question,target_side,other_side,trial_type,date_stamp,time_stamp,side_chosen,accuracy,rt,play_counter,date_of_birth,native_lang,other_langs,dev_info,gender,order,sentence_type,animacy
+n1rv5Hr5IS81uEHeBAJK9gCzL,1,2FillerPre2,The_boy_will_put_the_train_in_the_box,Can_you_put_the_train_in_the_box?,right,left,pretest_filler,05/03/2019,16:21,right,1,3207.104,1,03/09/2014,English,,,male,Pre,PO,NonPred
+n1rv5Hr5IS81uEHeBAJK9gCzL,2,3FillerPre2,The_girl_will_move_the_hat_to_the_table,Can_you_move_the_hat_to_the_table?,left,right,pretest_filler,05/03/2019,16:21,left,1,3453.104,1,03/09/2014,English,,,male,Pre,PO,NonPred
+n1rv5Hr5IS81uEHeBAJK9gCzL,3,1Pre2,The_boy_will_bring_the_giraffe_a_cake,Can_you_bring_the_giraffe_the_cake?,right,left,pretest,05/03/2019,16:21,left,0,1940.104,1,03/09/2014,English,,,male,Pre,PO,NonPred
+n1rv5Hr5IS81uEHeBAJK9gCzL,4,4Pre2,The_king_will_throw_the_turtle_a_squirrel,Can_you_throw_the_turtle_the_squirrel?,right,left,pretest,05/03/2019,16:21,left,0,7768.104,1,03/09/2014,English,,,male,Pre,PO,NonPred
+n1rv5Hr5IS81uEHeBAJK9gCzL,5,5Pre2,The_queen_will_send_the_monkey_a_horse,Can_you_send_the_monkey_the_horse?,right,left,pretest,05/03/2019,16:21,left,0,2702.104,1,03/09/2014,English,,,male,Pre,PO,NonPred
+n1rv5Hr5IS81uEHeBAJK9gCzL,6,2Pre2,The_girl_will_throw_the_elephant_a_clock,Can_you_throw_the_elephant_the_clock?,left,right,pretest,05/03/2019,16:21,right,0,2631.104,1,03/09/2014,English,,,male,Pre,PO,NonPred
+n1rv5Hr5IS81uEHeBAJK9gCzL,7,1FillerPre2,Peppa_pig_will_bounce_the_ball_with_the_bat,Can_you_bounce_the_ball_with_the_bat?,right,left,pretest_filler,05/03/2019,16:21,left,0,4054.104,2,03/09/2014,English,,,male,Pre,PO,NonPred
+n1rv5Hr5IS81uEHeBAJK9gCzL,8,6Pre2,Emily_elephant_will_bring_the_mouse_a_rabbit,Can_you_bring_the_mouse_the_rabbit?,left,right,pretest,05/03/2019,16:21,right,0,1896.104,1,03/09/2014,English,,,male,Pre,PO,NonPred
+n1rv5Hr5IS81uEHeBAJK9gCzL,9,4FillerPre2,The_king_will_poke_the_jelly_with_the_fork,Can_you_poke_the_jelly_with_the_fork?,left,right,pretest_filler,05/03/2019,16:21,right,0,3537.104,1,03/09/2014,English,,,male,Pre,PO,NonPred
+n1rv5Hr5IS81uEHeBAJK9gCzL,10,3Pre2,Peppa_Pig_will_send_the_hamster_a_toy,Can_you_send_the_hamster_the_toy?,left,right,pretest,05/03/2019,16:21,right,0,1812.104,1,03/09/2014,English,,,male,Pre,PO,NonPred

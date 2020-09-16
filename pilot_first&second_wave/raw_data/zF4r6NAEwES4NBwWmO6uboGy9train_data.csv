@@ -1,0 +1,13 @@
+subject_id,trial_number,trial_id,target_sentence,target_side,other_side,trial_type,date_stamp,time_stamp,side_chosen,accuracy,rt,play_counter,order,sentence_type,animacy
+zF4r6NAEwES4NBwWmO6uboGy9,1,5pop,The_girl_will_pass_the_dress_to_the_sheep,left,right,training,7/1/2019,13:44,left,1,7988.342000000001,1,Post,PO,Pred
+zF4r6NAEwES4NBwWmO6uboGy9,2,1pop,The_boy_will_throw_the_cheese_to_the_bear,right,left,training,7/1/2019,13:44,right,1,5042.342000000001,1,Post,PO,Pred
+zF4r6NAEwES4NBwWmO6uboGy9,3,6pop,Piglet_will_show_the_plate_to_the_fish,right,left,training,7/1/2019,13:44,right,1,2263.3420000000006,1,Post,PO,Pred
+zF4r6NAEwES4NBwWmO6uboGy9,4,4pop,George_will_send_the_brush_to_the_donkey,left,right,training,7/1/2019,13:44,left,1,4944.342000000001,1,Post,PO,Pred
+zF4r6NAEwES4NBwWmO6uboGy9,5,2pop,Tigger_will_give_the_bottle_to_the_zebra,right,left,training,7/1/2019,13:44,right,1,3563.3420000000006,1,Post,PO,Pred
+zF4r6NAEwES4NBwWmO6uboGy9,6,8pop,Chase_will_give_the_biscuit_to_the_kitten,left,right,training,7/1/2019,13:44,left,1,4196.342000000001,1,Post,PO,Pred
+zF4r6NAEwES4NBwWmO6uboGy9,7,12pop,Winnie_the_pooh_will_show_the_frisbee_to_the_duck,left,right,training,7/1/2019,13:44,left,1,4368.342000000001,1,Post,PO,Pred
+zF4r6NAEwES4NBwWmO6uboGy9,8,11pop,Marshall_will_pass_the_gloves_to_the_bee,right,left,training,7/1/2019,13:44,right,1,1389.3420000000006,1,Post,PO,Pred
+zF4r6NAEwES4NBwWmO6uboGy9,9,7pop,Bob_the_builder_will_throw_the_shoe_to_the_penguin,left,right,training,7/1/2019,13:44,left,1,3774.3420000000006,1,Post,PO,Pred
+zF4r6NAEwES4NBwWmO6uboGy9,10,9pop,Dora_the_explorer_will_bring_the_spoon_to_the_hippo,right,left,training,7/1/2019,13:44,right,1,3579.3420000000006,1,Post,PO,Pred
+zF4r6NAEwES4NBwWmO6uboGy9,11,3pop,Rebecca_Rabbit_will_bring_the_pencil_to_the_chicken,right,left,training,7/1/2019,13:44,right,1,2630.3420000000006,1,Post,PO,Pred
+zF4r6NAEwES4NBwWmO6uboGy9,12,10pop,Boots_will_send_the_flower_to_the_caterpillar,left,right,training,7/1/2019,13:44,left,1,3967.3420000000006,1,Post,PO,Pred

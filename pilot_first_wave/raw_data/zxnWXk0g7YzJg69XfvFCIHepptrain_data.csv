@@ -1,0 +1,13 @@
+subject_id,trial_number,trial_id,target_sentence,target_side,other_side,trial_type,date_stamp,time_stamp,side_chosen,accuracy,rt,play_counter,order,sentence_type,animacy
+zxnWXk0g7YzJg69XfvFCIHepp,1,3poup,Rebecca_Rabbit_will_bring_the_frog_to_the_chicken,left,right,training,7/1/2019,11:06,left,1,10079.435000000001,1,Post,PO,NonPred
+zxnWXk0g7YzJg69XfvFCIHepp,2,1poup,The_boy_will_throw_the_dinosaur_to_the_bear,left,right,training,7/1/2019,11:06,left,1,12919.435000000001,1,Post,PO,NonPred
+zxnWXk0g7YzJg69XfvFCIHepp,3,6poup,Piglet_will_show_the_ant_to_the_fish,left,right,training,7/1/2019,11:06,left,1,4649.435000000001,1,Post,PO,NonPred
+zxnWXk0g7YzJg69XfvFCIHepp,4,5poup,The_girl_will_pass_the_bird_to_the_sheep,left,right,training,7/1/2019,11:06,left,1,4422.435000000001,1,Post,PO,NonPred
+zxnWXk0g7YzJg69XfvFCIHepp,5,12poup,Winnie_the_pooh_will_show_the_owl_to_the_duck,right,left,training,7/1/2019,11:06,right,1,7792.435000000001,1,Post,PO,NonPred
+zxnWXk0g7YzJg69XfvFCIHepp,6,4poup,George_will_send_the_fox_to_the_donkey,right,left,training,7/1/2019,11:06,left,0,9629.435000000001,1,Post,PO,NonPred
+zxnWXk0g7YzJg69XfvFCIHepp,7,10poup,Boots_will_send_the_pig_to_the_caterpillar,right,left,training,7/1/2019,11:06,right,1,4393.435000000001,1,Post,PO,NonPred
+zxnWXk0g7YzJg69XfvFCIHepp,8,9poup,Dora_the_explorer_will_bring_the_cow_to_the_hippo,right,left,training,7/1/2019,11:06,right,1,4581.435000000001,1,Post,PO,NonPred
+zxnWXk0g7YzJg69XfvFCIHepp,9,2poup,Tigger_will_give_the_butterfly_to_the_zebra,right,left,training,7/1/2019,11:06,right,1,3722.4350000000013,1,Post,PO,NonPred
+zxnWXk0g7YzJg69XfvFCIHepp,10,8poup,Chase_will_give_the_deer_to_the_kitten,left,right,training,7/1/2019,11:06,left,1,4130.435000000001,1,Post,PO,NonPred
+zxnWXk0g7YzJg69XfvFCIHepp,11,11poup,Marshall_will_pass_the_goat_to_the_bee,left,right,training,7/1/2019,11:06,left,1,4939.435000000001,1,Post,PO,NonPred
+zxnWXk0g7YzJg69XfvFCIHepp,12,7poup,Bob_the_builder_will_throw_the_dog_to_the_penguin,right,left,training,7/1/2019,11:06,right,1,4308.435000000001,1,Post,PO,NonPred

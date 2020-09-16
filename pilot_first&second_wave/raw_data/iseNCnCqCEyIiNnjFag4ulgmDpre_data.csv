@@ -1,0 +1,12 @@
+subject_id,trial_number,trial_id,target_sentence,question,target_side,other_side,trial_type,date_stamp,time_stamp,side_chosen,accuracy,rt,play_counter,date_of_birth,native_lang,other_langs,dev_info,gender,order,sentence_type,animacy
+iseNCnCqCEyIiNnjFag4ulgmD,1,2FillerPre2,The_boy_will_put_the_train_in_the_box,Can_you_put_the_train_in_the_box?,right,left,pretest_filler,6/17/2019,10:51,right,1,1605.104,1,05/09/14,English and Welsh,,,male,Pre,DO,NonPred
+iseNCnCqCEyIiNnjFag4ulgmD,2,3FillerPre2,The_girl_will_move_the_hat_to_the_table,Can_you_move_the_hat_to_the_table?,left,right,pretest_filler,6/17/2019,10:51,left,1,1927.104,1,05/09/14,English and Welsh,,,male,Pre,DO,NonPred
+iseNCnCqCEyIiNnjFag4ulgmD,3,6Pre2,Emily_elephant_will_bring_the_mouse_a_rabbit,Can_you_bring_the_mouse_the_rabbit?,right,left,pretest,6/17/2019,10:51,right,1,1231.104,1,05/09/14,English and Welsh,,,male,Pre,DO,NonPred
+iseNCnCqCEyIiNnjFag4ulgmD,4,3Pre2,Peppa_Pig_will_send_the_hamster_a_toy,Can_you_send_the_hamster_the_toy?,left,right,pretest,6/17/2019,10:51,left,1,1830.104,1,05/09/14,English and Welsh,,,male,Pre,DO,NonPred
+iseNCnCqCEyIiNnjFag4ulgmD,5,5Pre2,The_queen_will_send_the_monkey_a_horse,Can_you_send_the_monkey_the_horse?,right,left,pretest,6/17/2019,10:51,right,1,1294.104,1,05/09/14,English and Welsh,,,male,Pre,DO,NonPred
+iseNCnCqCEyIiNnjFag4ulgmD,6,4Pre2,The_king_will_throw_the_turtle_a_squirrel,Can_you_throw_the_turtle_the_squirrel?,left,right,pretest,6/17/2019,10:51,left,1,1365.104,1,05/09/14,English and Welsh,,,male,Pre,DO,NonPred
+iseNCnCqCEyIiNnjFag4ulgmD,7,4FillerPre2,The_king_will_poke_the_jelly_with_the_fork,Can_you_poke_the_jelly_with_the_fork?,left,right,pretest_filler,6/17/2019,10:51,right,0,978.104,1,05/09/14,English and Welsh,,,male,Pre,DO,NonPred
+iseNCnCqCEyIiNnjFag4ulgmD,8,1FillerPre2,Peppa_pig_will_bounce_the_ball_with_the_bat,Can_you_bounce_the_ball_with_the_bat?,left,right,pretest_filler,6/17/2019,10:51,right,0,1829.104,1,05/09/14,English and Welsh,,,male,Pre,DO,NonPred
+iseNCnCqCEyIiNnjFag4ulgmD,9,1Pre2,The_boy_will_bring_the_giraffe_a_cake,Can_you_bring_the_giraffe_the_cake?,right,left,pretest,6/17/2019,10:51,right,1,1251.104,1,05/09/14,English and Welsh,,,male,Pre,DO,NonPred
+iseNCnCqCEyIiNnjFag4ulgmD,10,2Pre2,The_girl_will_throw_the_elephant_a_clock,Can_you_throw_the_elephant_the_clock?,right,left,pretest,6/17/2019,10:51,right,1,2370.104,1,05/09/14,English and Welsh,,,male,Pre,DO,NonPred
+,,,,,,,,,,,,,,,,,,,,,

@@ -1,0 +1,13 @@
+subject_id,trial_number,trial_id,target_sentence,target_side,other_side,trial_type,date_stamp,time_stamp,side_chosen,accuracy,rt,play_counter,order,sentence_type,animacy
+8kaNIeSDBgRxeXk4sd8m2I8EY,1,6doup,Piglet_will_show_the_fish_the_ant,left,right,training,2/7/2020,10:10,left,1,16835.352,1,Pre,DO,NonPred
+8kaNIeSDBgRxeXk4sd8m2I8EY,2,4doup,George_will_send_the_donkey_the_fox,right,left,training,2/7/2020,10:10,right,1,7349.351999999999,1,Pre,DO,NonPred
+8kaNIeSDBgRxeXk4sd8m2I8EY,3,10doup,Boots_will_send_the_caterpillar_the_pig,right,left,training,2/7/2020,10:10,right,1,7770.351999999999,1,Pre,DO,NonPred
+8kaNIeSDBgRxeXk4sd8m2I8EY,4,7doup,Bob_the_builder_will_throw_the_penguin_the_dog,left,right,training,2/7/2020,10:10,left,1,10699.351999999999,1,Pre,DO,NonPred
+8kaNIeSDBgRxeXk4sd8m2I8EY,5,8doup,Chase_will_give_the_kitten_the_deer,right,left,training,2/7/2020,10:10,right,1,9956.351999999999,1,Pre,DO,NonPred
+8kaNIeSDBgRxeXk4sd8m2I8EY,6,3doup,Rebecca_Rabbit_will_bring_the_chicken_the_frog,left,right,training,2/7/2020,10:10,left,1,7596.351999999999,1,Pre,DO,NonPred
+8kaNIeSDBgRxeXk4sd8m2I8EY,7,5doup,The_girl_will_pass_the_sheep_the_bird,right,left,training,2/7/2020,10:10,right,1,9471.351999999999,1,Pre,DO,NonPred
+8kaNIeSDBgRxeXk4sd8m2I8EY,8,11doup,Marshall_will_pass_the_bee_the_goat,left,right,training,2/7/2020,10:10,left,1,8669.351999999999,1,Pre,DO,NonPred
+8kaNIeSDBgRxeXk4sd8m2I8EY,9,1doup,The_boy_will_throw_the_bear_the_dinosaur,left,right,training,2/7/2020,10:10,left,1,10053.351999999999,1,Pre,DO,NonPred
+8kaNIeSDBgRxeXk4sd8m2I8EY,10,9doup,Dora_the_explorer_will_bring_the_hippo_the_cow,right,left,training,2/7/2020,10:10,right,1,8879.351999999999,1,Pre,DO,NonPred
+8kaNIeSDBgRxeXk4sd8m2I8EY,11,2doup,Tigger_will_give_the_zebra_the_butterfly,left,right,training,2/7/2020,10:10,left,1,9999.351999999999,1,Pre,DO,NonPred
+8kaNIeSDBgRxeXk4sd8m2I8EY,12,12doup,Winnie_the_pooh_will_show_the_duck_the_owl,right,left,training,2/7/2020,10:10,right,1,10251.351999999999,1,Pre,DO,NonPred

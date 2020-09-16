@@ -1,0 +1,247 @@
+---
+  title: "Structure Prediction and Learning Pilot Analyses"
+  author: "Chiara Gambi"
+  date: "06/05/2020"
+  output: 
+    html_document:
+      toc: true
+      toc_float: true
+      toc_depth: 2
+      number_sections: true
+  
+---
+# Background
+
+The analyses below are based on 98 children (mostly 4 year olds, but one had already turned five at the time of testing). We actually tested 24 more children, but data for these had to be discarded after we discovered an error in the training phase for the DO NonPred condition: one of the sentence recordings (out of 12 training trials) was mistakenly in the PO form rather than the DO form. Data from these kids were discarded and we tested 20 more kids after fixing the error. Note that this means we did not counterbalance assignment of children to conditions. When I compared the findings from the 24 children originally tested on the incorrect version to those from the 20 children tested on the corrected version, no differences were noticeable. In any case, the analyses below only include data from children tested on the correct version. The error did not affect the PO Pred, PO NonPred and DO Pred training conditions. Testing took place either in the lab or at the child's nursery.
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+#Load packages
+library(cowplot)
+library(ggplot2)
+library(doBy)
+library(lme4)
+library(reshape)
+library(reshape2)
+library(dplyr)
+library(bootstrap)
+library(stringr)
+library(lubridate)
+library(knitr)
+
+## CI
+## from Micheal Frank's github
+## for bootstrapping 95% confidence intervals
+theta <- function(x,xdata,na.rm=T) {mean(xdata[x],na.rm=na.rm)}
+ci.low <- function(x,na.rm=T) {
+  mean(x,na.rm=na.rm) - quantile(bootstrap(1:length(x),1000,theta,x,na.rm=na.rm)$thetastar,.025,na.rm=na.rm)}
+ci.high <- function(x,na.rm=T) {
+  quantile(bootstrap(1:length(x),1000,theta,x,na.rm=na.rm)$thetastar,.975,na.rm=na.rm) - mean(x,na.rm=na.rm)}
+
+
+#Load in data
+setwd("~/OneDrive - Cardiff University/Cardiff/research/Pred&Learn/structure_pred/data/all_pilot")
+pre_data<-read.table("pre-test-all-pilot.txt",header = T)
+post_data<-read.table("post-test-all-pilot.txt",header= T)
+
+# List of animate-animate trials
+AA<-c("4Pre2","6Pre2","5Pre2","4Post2","5post2","6post2")
+#all other experimental trials are AI
+trials_animacy<-data.frame(trial_id= c("4Pre2","6Pre2","5Pre2","4Post2","5post2","6post2","1Pre2","2Pre2","3Pre2","1Post2","2post2","3post2"),trial_animacy=c(rep(c("AA","AI"),each=6)))
+```
+
+The table below shows the current number of participants in each training condition. This is not balanced at the moment.
+
+```{r part numb}
+pre_data_count<-pre_data
+pre_data_count_subj<-summaryBy(play_counter~sentence_type+animacy+subject_id,data=pre_data_count,FUN=sum)
+pre_data_count_subj$count<-1
+kable(data.frame(summaryBy(count~sentence_type+animacy,data=pre_data_count_subj,FUN=sum)))
+```
+
+
+## Graphs {.tabset .tabset-fade}
+
+The graphs below show accuracy scores for pre- and post-test or difference scores (see respective tabs), separately for test trials that were more difficult (animate-animate, i.e. with an animate theme as well as an animate recipient) or easier (animate-inanimate, i.e., with an animate recipient but an inanimate theme). All test trials were in the DO form.
+
+### Pre-test vs. post-test scores
+```{r graphs pre-post}
+#Plot pre/post test accuracy (no difference scores)
+#combine pre and post-test
+pre_data$phase<-"Pre-test"
+post_data$phase<-"Post-test"
+all_data<-rbind(pre_data,post_data)
+## exclude fillers (trial_type == posttest or pretest)
+all_data_exp<-all_data[all_data$trial_type=="posttest"|all_data$trial_type=="pretest",]
+## Add trial animacy info
+all_data_exp.tp<-merge(all_data_exp,trials_animacy,by="trial_id")
+
+all_data.subj<-summaryBy(accuracy~sentence_type+animacy+trial_animacy+phase+subject_id,data=all_data_exp.tp,FUN=mean, keep.names=T)
+all_data.mean<-summaryBy(accuracy~sentence_type+animacy+trial_animacy+phase,data=all_data_exp.tp,FUN=c(mean,ci.low,ci.high), keep.names=T)
+all_data.mean$condition<-paste(all_data.mean$sentence_type,all_data.mean$animacy)
+
+#plot
+all_data.mean$phase<-relevel(as.factor(all_data.mean$phase),ref="Pre-test")
+all_data.mean$trial_animacy<-relevel(as.factor(all_data.mean$trial_animacy),ref="AI")
+levels(all_data.mean$trial_animacy)<-c("Animate-Inanimate","Animate-Animate")
+ggplot(all_data.mean,aes(x=condition,y=accuracy.mean,col=phase))+
+  geom_bar(position=position_dodge(), stat="identity")+
+  geom_errorbar(aes(ymin=accuracy.mean-accuracy.ci.low,ymax=accuracy.mean+accuracy.ci.high),position = position_dodge(width=.9), size =0.5, width=0.2)+
+  facet_grid(.~trial_animacy)+
+  xlab("Training condition")+
+  ylab("Accuracy")+
+  theme(legend.position = "bottom",axis.text.x = element_text(size = 9))
+
+#plot range of pre-test scores
+all_data.subj$phase<-relevel(as.factor(all_data.subj$phase),ref="Pre-test")
+ggplot(all_data.subj,aes(x=phase,y=accuracy,col=phase))+
+  geom_boxplot()+
+  geom_jitter(height=0.1,width=0.2, alpha=0.3)+
+  theme(legend.position = "bottom")
+
+# plot pre and post-test accuracy by trial_animacy
+all_data.mean2<-summaryBy(accuracy~trial_animacy+phase,data=all_data_exp.tp,FUN=c(mean,ci.low,ci.high), keep.names=T)
+all_data.mean2$phase<-relevel(as.factor(all_data.mean2$phase),ref="Pre-test")
+all_data.mean2$trial_animacy<-relevel(as.factor(all_data.mean2$trial_animacy),ref="AI")
+levels(all_data.mean2$trial_animacy)<-c("Animate-Inanimate","Animate-Animate")
+
+ggplot(all_data.mean2,aes(x=trial_animacy,y=accuracy.mean,col=phase))+
+  geom_bar(position=position_dodge(), stat="identity")+
+  geom_errorbar(aes(ymin=accuracy.mean-accuracy.ci.low,ymax=accuracy.mean+accuracy.ci.high),position = position_dodge(width=.9), size =0.5, width=0.2)+
+  xlab("Test Trial Animacy")+
+  ylab("Accuracy")+
+  theme(legend.position = "bottom")
+```
+
+### Difference scores
+
+```{r graphs difference scores}
+#### Compute difference scores
+## First, exclude fillers (trial_type == posttest or pretest)
+pre_data_exp<-pre_data[(pre_data$trial_type=="posttest"|pre_data$trial_type=="pretest"),]
+post_data_exp<-post_data[(post_data$trial_type=="posttest"|post_data$trial_type=="pretest"),]
+
+pre_scores<-summaryBy(accuracy~sentence_type+animacy+subject_id,data=pre_data_exp,FUN=mean)
+post_scores<-summaryBy(accuracy~sentence_type+animacy+subject_id,data=post_data_exp,FUN=mean)
+names(pre_scores)[4]<-"pre_score"
+names(post_scores)[4]<-"post_score"
+
+diff_scores<-merge(pre_scores,post_scores,by=c("sentence_type","animacy","subject_id"))
+#head(diff_scores)
+diff_scores$diff_score<-diff_scores$post_score-diff_scores$pre_score
+
+diff_scores.mean<-summaryBy(diff_score~sentence_type+animacy,data=diff_scores,FUN=c(mean,ci.low,ci.high))
+
+#plot with CI by sentence_type and Pred
+ggplot(diff_scores.mean,aes(x=sentence_type,y=diff_score.mean,col=animacy))+geom_pointrange(aes(y=diff_score.mean,ymin=diff_score.mean-diff_score.ci.low,ymax=diff_score.mean+diff_score.ci.high),position = position_dodge(width=.9), size =0.5)
+
+## add target animacy info
+# List of animate-animate trials
+AA<-c("4Pre2","6Pre2","5Pre2","4Post2","5post2","6post2")
+#all other experimental trials are AI
+trials_animacy<-data.frame(trial_id= c("4Pre2","6Pre2","5Pre2","4Post2","5post2","6post2","1Pre2","2Pre2","3Pre2","1Post2","2post2","3post2"),trial_animacy=c(rep(c("AA","AI"),each=6)))
+
+pre_data_exp.tp<-merge(pre_data_exp,trials_animacy,by="trial_id")
+post_data_exp.tp<-merge(post_data_exp,trials_animacy,by="trial_id")
+
+#diff scores by type
+pre_scores.tp<-summaryBy(accuracy~sentence_type+animacy+trial_animacy+subject_id,data=pre_data_exp.tp,FUN=mean)
+post_scores.tp<-summaryBy(accuracy~sentence_type+animacy+trial_animacy++subject_id,data=post_data_exp.tp,FUN=mean)
+names(pre_scores.tp)[5]<-"pre_score"
+names(post_scores.tp)[5]<-"post_score"
+
+diff_scores.tp<-merge(pre_scores.tp,post_scores.tp,by=c("sentence_type","animacy","subject_id","trial_animacy"))
+diff_scores.tp$diff_score<-diff_scores.tp$post_score-diff_scores.tp$pre_score
+
+diff_scores.tp.mean<-summaryBy(diff_score~sentence_type+animacy+trial_animacy,data=diff_scores.tp,FUN=c(mean,ci.low,ci.high))
+
+#plot with CI by sentence_type and Pred, with separate panels for trial_animacy
+ggplot(diff_scores.tp.mean,aes(x=sentence_type,y=diff_score.mean,col=animacy))+geom_pointrange(aes(y=diff_score.mean,ymin=diff_score.mean-diff_score.ci.low,ymax=diff_score.mean+diff_score.ci.high),position = position_dodge(width=.9), size =0.5)+facet_grid(.~trial_animacy)
+
+```
+
+## Analyses {.tabset .tabset-fade}
+
+Legend
+```{r, results='asis'}
+library(pander)
+tabl <- "
+| Factor Label | Gloss                            | 
+|--------------|:--------------------------------:|
+| PC           | Pre-test score                   |
+| SCC          | Sentence Type (PO vs. DO)        | 
+| ACC          | Predictability (NonPred vs. Pred)|
+| TACC         | Animacy (AI vs. AA)              |
+"
+cat(tabl) # output the table in a format good for HTML/PDF/docx conversion
+```
+
+
+### Omnibus ANCOVA
+
+Summary. 
+
+  * main effect of pre-test accuracy -- higher accuracy in post-test if higher accuracy in pre-test
+  * main effect of trial animacy -- higher accuracy for AI test items
+  * interaction between sentence type and trial animacy -- the advantage for AI over AA is smaller if training == DO
+
+
+```{r ANCOVA}
+## Brysbaert (2018, Journal of Cognition) shows that for pre-/post-test designs 
+## ANCOVA is more powerful than a mixed ANOVA with one between-predictor and a within-predictor
+
+# I need to redifine item on the basis of the verb used, in which case all participants
+# will have encounted all items (3) across pre and post-test (but we would also have only 3 items)
+
+
+all_data_exp.tp$verb<-"NA"
+all_data_exp.tp$verb<-ifelse(all_data_exp.tp$trial_id%in%c("1Pre2","6Pre2","2post2","5post2"),"bring",ifelse(all_data_exp.tp$trial_id%in%c("3Pre2","5Pre2","1Post2","4Post2"),"send",ifelse(all_data_exp.tp$trial_id%in%c("2Pre2","4Pre2","3post2","6post2"),"throw","NA")))
+all_data_exp.tp<-all_data_exp.tp[,-1]# remove trial_id column
+
+all.tp<-all_data_exp.tp[,c("subject_id","sentence_type","animacy","trial_animacy","accuracy","verb","order","phase")]
+all.tp.w<-reshape(all.tp, v.names="accuracy",timevar="phase",idvar=c("verb","subject_id","sentence_type","animacy","order","trial_animacy"), direction = "wide")
+
+all.tp.w$SC<-ifelse(all.tp.w$sentence_type=="PO",-.5,.5)
+all.tp.w$SCC<-scale(all.tp.w$SC,T,F)
+all.tp.w$AC<-ifelse(all.tp.w$animacy=="NonPred",-.5,.5)
+all.tp.w$ACC<-scale(all.tp.w$AC,T,F)
+all.tp.w$TAC<-ifelse(all.tp.w$trial_animacy=="AI",-.5,.5)
+all.tp.w$TACC<-scale(all.tp.w$TAC,T,F)
+all.tp.w$PC<-scale(all.tp.w$`accuracy.Pre-test`,T,F)
+
+m.tp.ANCOVA.int<-glmer(`accuracy.Post-test`~PC*SCC*ACC*TACC+(1|subject_id)+(1|verb),data=all.tp.w, family="binomial", glmerControl(optimizer = "bobyqa"))
+#summary(m.tp.ANCOVA.int)
+
+summary(m.tp.ANCOVA.int)$call
+kable(data.frame(coef(summary(m.tp.ANCOVA.int))),caption = "Post-test accuracy, controlling for Pre-test accuracy - Model")
+
+```
+
+### Animate-Animate vs. Animate-Inanimate Test trials
+
+Summary for AA
+
+  * main effect of pre-test accuracy -- higher accuracy in post-test if higher accuracy in pre-test
+  * main effect of sentence_type -- higher accuracy for training == D0
+  * marginal interaction of sentence_type and predictability -- higher accuracy if training == DO Pred
+
+Summary for AI
+
+  * main effect of pre-test accuracy -- higher accuracy in post-test if higher accuracy in pre-test
+
+```{r AAvs.AI}
+m.tp.ANCOVA.int.AA<-glmer(`accuracy.Post-test`~PC*SCC*ACC+(1|subject_id)+(1|verb),data=subset(all.tp.w,trial_animacy=="AA"), family="binomial", glmerControl(optimizer = "bobyqa"))
+#summary(m.tp.ANCOVA.int.AA)
+
+summary(m.tp.ANCOVA.int.AA)$call
+kable(data.frame(coef(summary(m.tp.ANCOVA.int.AA))),caption = "Post-test accuracy, controlling for Pre-test accuracy - Animate-Animate test trials only")
+
+m.tp.ANCOVA.int.AI<-glmer(`accuracy.Post-test`~PC*SCC*ACC+(1|subject_id)+(1|verb),data=subset(all.tp.w,trial_animacy=="AI"), family="binomial", glmerControl(optimizer = "bobyqa"))
+#summary(m.tp.ANCOVA.int.AI)
+
+summary(m.tp.ANCOVA.int.AI)$call
+kable(data.frame(coef(summary(m.tp.ANCOVA.int.AI))),caption = "Post-test accuracy, controlling for Pre-test accuracy - Animate-Inanimate test trials only")
+
+```
+

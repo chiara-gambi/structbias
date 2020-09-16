@@ -1,0 +1,13 @@
+subject_id,trial_number,trial_id,target_sentence,target_side,other_side,trial_type,date_stamp,time_stamp,side_chosen,accuracy,rt,play_counter,order,sentence_type,animacy
+2hYJmUF5jJEGGI7LxAbvsImqO,1,1poup,The_boy_will_throw_the_dinosaur_to_the_bear,right,left,training,6/28/2019,10:10,right,1,8621,1,Post,PO,NonPred
+2hYJmUF5jJEGGI7LxAbvsImqO,2,8poup,Chase_will_give_the_deer_to_the_kitten,right,left,training,6/28/2019,10:10,right,1,4979,1,Post,PO,NonPred
+2hYJmUF5jJEGGI7LxAbvsImqO,3,12poup,Winnie_the_pooh_will_show_the_owl_to_the_duck,left,right,training,6/28/2019,10:10,left,1,5126,1,Post,PO,NonPred
+2hYJmUF5jJEGGI7LxAbvsImqO,4,7poup,Bob_the_builder_will_throw_the_dog_to_the_penguin,right,left,training,6/28/2019,10:10,right,1,5084,1,Post,PO,NonPred
+2hYJmUF5jJEGGI7LxAbvsImqO,5,3poup,Rebecca_Rabbit_will_bring_the_frog_to_the_chicken,left,right,training,6/28/2019,10:10,left,1,4006,1,Post,PO,NonPred
+2hYJmUF5jJEGGI7LxAbvsImqO,6,4poup,George_will_send_the_fox_to_the_donkey,right,left,training,6/28/2019,10:10,right,1,6782,1,Post,PO,NonPred
+2hYJmUF5jJEGGI7LxAbvsImqO,7,11poup,Marshall_will_pass_the_goat_to_the_bee,left,right,training,6/28/2019,10:10,left,1,1952,1,Post,PO,NonPred
+2hYJmUF5jJEGGI7LxAbvsImqO,8,5poup,The_girl_will_pass_the_bird_to_the_sheep,left,right,training,6/28/2019,10:10,left,1,3075,1,Post,PO,NonPred
+2hYJmUF5jJEGGI7LxAbvsImqO,9,2poup,Tigger_will_give_the_butterfly_to_the_zebra,left,right,training,6/28/2019,10:10,left,1,4082,1,Post,PO,NonPred
+2hYJmUF5jJEGGI7LxAbvsImqO,10,6poup,Piglet_will_show_the_ant_to_the_fish,right,left,training,6/28/2019,10:10,right,1,5352,1,Post,PO,NonPred
+2hYJmUF5jJEGGI7LxAbvsImqO,11,9poup,Dora_the_explorer_will_bring_the_cow_to_the_hippo,left,right,training,6/28/2019,10:10,left,1,4897,1,Post,PO,NonPred
+2hYJmUF5jJEGGI7LxAbvsImqO,12,10poup,Boots_will_send_the_pig_to_the_caterpillar,right,left,training,6/28/2019,10:10,right,1,4215,1,Post,PO,NonPred

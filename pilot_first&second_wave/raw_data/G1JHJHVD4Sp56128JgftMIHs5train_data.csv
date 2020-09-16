@@ -1,0 +1,13 @@
+subject_id,trial_number,trial_id,target_sentence,target_side,other_side,trial_type,date_stamp,time_stamp,side_chosen,accuracy,rt,play_counter,order,sentence_type,animacy
+G1JHJHVD4Sp56128JgftMIHs5,1,10doup,Boots_will_send_the_caterpillar_the_pig,left,right,training,11/3/2019,12:02,left,1,16189.187,1,Post,DO,NonPred
+G1JHJHVD4Sp56128JgftMIHs5,2,12doup,Winnie_the_pooh_will_show_the_duck_the_owl,left,right,training,11/3/2019,12:02,left,1,7704.187,1,Post,DO,NonPred
+G1JHJHVD4Sp56128JgftMIHs5,3,2doup,Tigger_will_give_the_zebra_the_butterfly,left,right,training,11/3/2019,12:02,left,1,2790.187,1,Post,DO,NonPred
+G1JHJHVD4Sp56128JgftMIHs5,4,6doup,Piglet_will_show_the_fish_the_ant,left,right,training,11/3/2019,12:02,left,1,1950.187,1,Post,DO,NonPred
+G1JHJHVD4Sp56128JgftMIHs5,5,11doup,Marshall_will_pass_the_bee_the_goat,right,left,training,11/3/2019,12:02,right,1,14761.187,1,Post,DO,NonPred
+G1JHJHVD4Sp56128JgftMIHs5,6,9doup,Dora_the_explorer_will_bring_the_hippo_the_cow,right,left,training,11/3/2019,12:02,right,1,3711.187,1,Post,DO,NonPred
+G1JHJHVD4Sp56128JgftMIHs5,7,5doup,The_girl_will_pass_the_sheep_the_bird,right,left,training,11/3/2019,12:02,right,1,4080.187,1,Post,DO,NonPred
+G1JHJHVD4Sp56128JgftMIHs5,8,4doup,George_will_send_the_donkey_the_fox,left,right,training,11/3/2019,12:02,left,1,8911.187,1,Post,DO,NonPred
+G1JHJHVD4Sp56128JgftMIHs5,9,8doup,Chase_will_give_the_kitten_the_deer,right,left,training,11/3/2019,12:02,right,1,4343.187,1,Post,DO,NonPred
+G1JHJHVD4Sp56128JgftMIHs5,10,1doup,The_boy_will_throw_the_bear_the_dinosaur,right,left,training,11/3/2019,12:02,right,1,5562.187,1,Post,DO,NonPred
+G1JHJHVD4Sp56128JgftMIHs5,11,3doup,Rebecca_Rabbit_will_bring_the_chicken_the_frog,left,right,training,11/3/2019,12:02,left,1,1997.187,1,Post,DO,NonPred
+G1JHJHVD4Sp56128JgftMIHs5,12,7doup,Bob_the_builder_will_throw_the_penguin_the_dog,right,left,training,11/3/2019,12:02,right,1,3113.187,1,Post,DO,NonPred

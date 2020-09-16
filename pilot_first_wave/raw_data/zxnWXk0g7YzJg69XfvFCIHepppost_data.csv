@@ -1,0 +1,11 @@
+subject_id,trial_number,trial_id,target_sentence,question,target_side,other_side,trial_type,date_stamp,time_stamp,side_chosen,accuracy,rt,play_counter,date_of_birth,native_lang,other_langs,dev_info,gender,order,sentence_type,animacy
+zxnWXk0g7YzJg69XfvFCIHepp,1,4fillerpost2,The_prince_will_move_the_blanket_to_the_sofa,Can_you_move_the_blanket_to_the_sofa?,right,left,posttest_filler,7/1/2019,11:06,right,1,1188.135,1,14/1/15,English,,,female,Post,PO,NonPred
+zxnWXk0g7YzJg69XfvFCIHepp,2,3fillerpost2,Dora_the_explorer_will_put_the_food_in_the_basket,Can_you_put_the_food_in_the_basket?,left,right,posttest_filler,7/1/2019,11:06,left,1,1819.135,1,14/1/15,English,,,female,Post,PO,NonPred
+zxnWXk0g7YzJg69XfvFCIHepp,3,3Pre2,Peppa_Pig_will_send_the_hamster_a_toy,Can_you_send_the_hamster_the_toy?,right,left,pretest,7/1/2019,11:06,left,0,1472.135,1,14/1/15,English,,,female,Post,PO,NonPred
+zxnWXk0g7YzJg69XfvFCIHepp,4,5Pre2,The_queen_will_send_the_monkey_a_horse,Can_you_send_the_monkey_the_horse?,right,left,pretest,7/1/2019,11:06,left,0,1018.135,1,14/1/15,English,,,female,Post,PO,NonPred
+zxnWXk0g7YzJg69XfvFCIHepp,5,4Pre2,The_king_will_throw_the_turtle_a_squirrel,Can_you_throw_the_turtle_the_squirrel?,right,left,pretest,7/1/2019,11:06,left,0,7779.135,1,14/1/15,English,,,female,Post,PO,NonPred
+zxnWXk0g7YzJg69XfvFCIHepp,6,2Pre2,The_girl_will_throw_the_elephant_a_clock,Can_you_throw_the_elephant_the_clock?,left,right,pretest,7/1/2019,11:06,right,0,5106.135,1,14/1/15,English,,,female,Post,PO,NonPred
+zxnWXk0g7YzJg69XfvFCIHepp,7,6Pre2,Emily_elephant_will_bring_the_mouse_a_rabbit,Can_you_bring_the_mouse_the_rabbit?,left,right,pretest,7/1/2019,11:06,right,0,2144.135,1,14/1/15,English,,,female,Post,PO,NonPred
+zxnWXk0g7YzJg69XfvFCIHepp,8,1FillerPre2,Peppa_pig_will_bounce_the_ball_with_the_bat,Can_you_bounce_the_ball_with_the_bat?,left,right,pretest_filler,7/1/2019,11:06,right,0,6985.135,1,14/1/15,English,,,female,Post,PO,NonPred
+zxnWXk0g7YzJg69XfvFCIHepp,9,1Pre2,The_boy_will_bring_the_giraffe_a_cake,Can_you_bring_the_giraffe_the_cake?,right,left,pretest,7/1/2019,11:06,left,0,6106.135,1,14/1/15,English,,,female,Post,PO,NonPred
+zxnWXk0g7YzJg69XfvFCIHepp,10,4FillerPre2,The_king_will_poke_the_jelly_with_the_fork,Can_you_poke_the_jelly_with_the_fork?,left,right,pretest_filler,7/1/2019,11:06,right,0,8141.135,1,14/1/15,English,,,female,Post,PO,NonPred

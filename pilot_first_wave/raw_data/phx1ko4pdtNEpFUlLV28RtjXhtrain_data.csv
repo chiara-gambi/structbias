@@ -1,0 +1,13 @@
+subject_id,trial_number,trial_id,target_sentence,target_side,other_side,trial_type,date_stamp,time_stamp,side_chosen,accuracy,rt,play_counter,order,sentence_type,animacy
+phx1ko4pdtNEpFUlLV28RtjXh,1,6pop,Piglet_will_show_the_plate_to_the_fish,right,left,training,7/2/2019,13:30,right,1,13741.1857,1,Pre,PO,Pred
+phx1ko4pdtNEpFUlLV28RtjXh,2,5pop,The_girl_will_pass_the_dress_to_the_sheep,left,right,training,7/2/2019,13:30,left,1,4827.1857,1,Pre,PO,Pred
+phx1ko4pdtNEpFUlLV28RtjXh,3,12pop,Winnie_the_pooh_will_show_the_frisbee_to_the_duck,left,right,training,7/2/2019,13:30,left,1,4576.1857,1,Pre,PO,Pred
+phx1ko4pdtNEpFUlLV28RtjXh,4,7pop,Bob_the_builder_will_throw_the_shoe_to_the_penguin,right,left,training,7/2/2019,13:30,right,1,3128.1857,1,Pre,PO,Pred
+phx1ko4pdtNEpFUlLV28RtjXh,5,10pop,Boots_will_send_the_flower_to_the_caterpillar,right,left,training,7/2/2019,13:30,right,1,3254.1857,1,Pre,PO,Pred
+phx1ko4pdtNEpFUlLV28RtjXh,6,3pop,Rebecca_Rabbit_will_bring_the_pencil_to_the_chicken,left,right,training,7/2/2019,13:30,left,1,9449.1857,1,Pre,PO,Pred
+phx1ko4pdtNEpFUlLV28RtjXh,7,4pop,George_will_send_the_brush_to_the_donkey,right,left,training,7/2/2019,13:30,right,1,4493.1857,1,Pre,PO,Pred
+phx1ko4pdtNEpFUlLV28RtjXh,8,2pop,Tigger_will_give_the_bottle_to_the_zebra,left,right,training,7/2/2019,13:30,left,1,7029.1857,1,Pre,PO,Pred
+phx1ko4pdtNEpFUlLV28RtjXh,9,9pop,Dora_the_explorer_will_bring_the_spoon_to_the_hippo,right,left,training,7/2/2019,13:30,right,1,7859.1857,1,Pre,PO,Pred
+phx1ko4pdtNEpFUlLV28RtjXh,10,1pop,The_boy_will_throw_the_cheese_to_the_bear,right,left,training,7/2/2019,13:30,right,1,5026.1857,1,Pre,PO,Pred
+phx1ko4pdtNEpFUlLV28RtjXh,11,11pop,Marshall_will_pass_the_gloves_to_the_bee,left,right,training,7/2/2019,13:30,left,1,4373.1857,1,Pre,PO,Pred
+phx1ko4pdtNEpFUlLV28RtjXh,12,8pop,Chase_will_give_the_biscuit_to_the_kitten,left,right,training,7/2/2019,13:30,left,1,3641.1857,1,Pre,PO,Pred

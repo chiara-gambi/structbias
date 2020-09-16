@@ -1,0 +1,13 @@
+subject_id,trial_number,trial_id,target_sentence,target_side,other_side,trial_type,date_stamp,time_stamp,side_chosen,accuracy,rt,play_counter,order,sentence_type,animacy
+S0FS3AD9zBOFrb47t3cSGDRQM,1,12poup,Winnie_the_pooh_will_show_the_owl_to_the_duck,right,left,training,5/29/2019,17:19,right,1,3644.995,1,Post,PO,NonPred
+S0FS3AD9zBOFrb47t3cSGDRQM,2,1poup,The_boy_will_throw_the_dinosaur_to_the_bear,right,left,training,5/29/2019,17:19,right,1,1525.995,1,Post,PO,NonPred
+S0FS3AD9zBOFrb47t3cSGDRQM,3,3poup,Rebecca_Rabbit_will_bring_the_frog_to_the_chicken,left,right,training,5/29/2019,17:19,left,1,1535.995,2,Post,PO,NonPred
+S0FS3AD9zBOFrb47t3cSGDRQM,4,6poup,Piglet_will_show_the_ant_to_the_fish,left,right,training,5/29/2019,17:19,left,1,2578.995,1,Post,PO,NonPred
+S0FS3AD9zBOFrb47t3cSGDRQM,5,5poup,The_girl_will_pass_the_bird_to_the_sheep,left,right,training,5/29/2019,17:19,left,1,3557.995,1,Post,PO,NonPred
+S0FS3AD9zBOFrb47t3cSGDRQM,6,9poup,Dora_the_explorer_will_bring_the_cow_to_the_hippo,left,right,training,5/29/2019,17:19,left,1,7457.995,1,Post,PO,NonPred
+S0FS3AD9zBOFrb47t3cSGDRQM,7,10poup,Boots_will_send_the_pig_to_the_caterpillar,right,left,training,5/29/2019,17:19,right,1,3443.995,1,Post,PO,NonPred
+S0FS3AD9zBOFrb47t3cSGDRQM,8,4poup,George_will_send_the_fox_to_the_donkey,right,left,training,5/29/2019,17:19,right,1,6094.995,1,Post,PO,NonPred
+S0FS3AD9zBOFrb47t3cSGDRQM,9,11poup,Marshall_will_pass_the_goat_to_the_bee,left,right,training,5/29/2019,17:19,left,1,9508.995,1,Post,PO,NonPred
+S0FS3AD9zBOFrb47t3cSGDRQM,10,2poup,Tigger_will_give_the_butterfly_to_the_zebra,right,left,training,5/29/2019,17:19,right,1,1961.995,1,Post,PO,NonPred
+S0FS3AD9zBOFrb47t3cSGDRQM,11,8poup,Chase_will_give_the_deer_to_the_kitten,right,left,training,5/29/2019,17:19,right,1,5281.995,1,Post,PO,NonPred
+S0FS3AD9zBOFrb47t3cSGDRQM,12,7poup,Bob_the_builder_will_throw_the_dog_to_the_penguin,left,right,training,5/29/2019,17:19,left,1,6145.995,1,Post,PO,NonPred

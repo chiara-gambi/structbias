@@ -1,0 +1,13 @@
+subject_id,trial_number,trial_id,target_sentence,target_side,other_side,trial_type,date_stamp,time_stamp,side_chosen,accuracy,rt,play_counter,order,sentence_type,animacy
+HW1ZejRAh2Dbrb4HzUL0Vqlth,1,12doup,Winnie_the_pooh_will_show_the_duck_the_owl,left,right,training,1/24/2020,14:46,left,1,5760.012,1,Pre,DO,NonPred
+HW1ZejRAh2Dbrb4HzUL0Vqlth,2,10doup,Boots_will_send_the_caterpillar_the_pig,left,right,training,1/24/2020,14:46,left,1,2282.012,1,Pre,DO,NonPred
+HW1ZejRAh2Dbrb4HzUL0Vqlth,3,3doup,Rebecca_Rabbit_will_bring_the_chicken_the_frog,left,right,training,1/24/2020,14:46,left,1,6326.012,1,Pre,DO,NonPred
+HW1ZejRAh2Dbrb4HzUL0Vqlth,4,11doup,Marshall_will_pass_the_bee_the_goat,left,right,training,1/24/2020,14:46,left,1,5593.012,1,Pre,DO,NonPred
+HW1ZejRAh2Dbrb4HzUL0Vqlth,5,6doup,Piglet_will_show_the_fish_the_ant,right,left,training,1/24/2020,14:46,right,1,7280.012,1,Pre,DO,NonPred
+HW1ZejRAh2Dbrb4HzUL0Vqlth,6,9doup,Dora_the_explorer_will_bring_the_hippo_the_cow,left,right,training,1/24/2020,14:46,left,1,3864.012,1,Pre,DO,NonPred
+HW1ZejRAh2Dbrb4HzUL0Vqlth,7,2doup,Tigger_will_give_the_zebra_the_butterfly,left,right,training,1/24/2020,14:46,left,1,2531.012,1,Pre,DO,NonPred
+HW1ZejRAh2Dbrb4HzUL0Vqlth,8,1doup,The_boy_will_throw_the_bear_the_dinosaur,right,left,training,1/24/2020,14:46,right,1,1779.012,1,Pre,DO,NonPred
+HW1ZejRAh2Dbrb4HzUL0Vqlth,9,8doup,Chase_will_give_the_kitten_the_deer,right,left,training,1/24/2020,14:46,right,1,16388.012,2,Pre,DO,NonPred
+HW1ZejRAh2Dbrb4HzUL0Vqlth,10,5doup,The_girl_will_pass_the_sheep_the_bird,right,left,training,1/24/2020,14:46,right,1,3162.012,1,Pre,DO,NonPred
+HW1ZejRAh2Dbrb4HzUL0Vqlth,11,7doup,Bob_the_builder_will_throw_the_penguin_the_dog,right,left,training,1/24/2020,14:46,right,1,2167.012,2,Pre,DO,NonPred
+HW1ZejRAh2Dbrb4HzUL0Vqlth,12,4doup,George_will_send_the_donkey_the_fox,right,left,training,1/24/2020,14:46,right,1,2810.012,2,Pre,DO,NonPred

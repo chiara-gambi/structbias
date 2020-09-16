@@ -1,0 +1,11 @@
+subject_id,trial_number,trial_id,target_sentence,question,target_side,other_side,trial_type,date_stamp,time_stamp,side_chosen,accuracy,rt,play_counter,date_of_birth,native_lang,other_langs,dev_info,gender,order,sentence_type,animacy
+8jgAPlNrNhf7NHal2NhRU5cKP,1,2FillerPre2,The_boy_will_put_the_train_in_the_box,Can_you_put_the_train_in_the_box?,right,left,pretest_filler,07/08/2019,10:40,right,1,4765.104,1,23/03/2015,English,,,female,Pre,DO,Pred
+8jgAPlNrNhf7NHal2NhRU5cKP,2,3FillerPre2,The_girl_will_move_the_hat_to_the_table,Can_you_move_the_hat_to_the_table?,left,right,pretest_filler,07/08/2019,10:40,left,1,2527.104,1,23/03/2015,English,,,female,Pre,DO,Pred
+8jgAPlNrNhf7NHal2NhRU5cKP,3,2Pre2,The_girl_will_throw_the_elephant_a_clock,Can_you_throw_the_elephant_the_clock?,left,right,pretest,07/08/2019,10:40,left,1,4093.104,1,23/03/2015,English,,,female,Pre,DO,Pred
+8jgAPlNrNhf7NHal2NhRU5cKP,4,4FillerPre2,The_king_will_poke_the_jelly_with_the_fork,Can_you_poke_the_jelly_with_the_fork?,right,left,pretest_filler,07/08/2019,10:40,left,0,5863.104,1,23/03/2015,English,,,female,Pre,DO,Pred
+8jgAPlNrNhf7NHal2NhRU5cKP,5,4Pre2,The_king_will_throw_the_turtle_a_squirrel,Can_you_throw_the_turtle_the_squirrel?,right,left,pretest,07/08/2019,10:40,left,0,1991.104,1,23/03/2015,English,,,female,Pre,DO,Pred
+8jgAPlNrNhf7NHal2NhRU5cKP,6,1FillerPre2,Peppa_pig_will_bounce_the_ball_with_the_bat,Can_you_bounce_the_ball_with_the_bat?,left,right,pretest_filler,07/08/2019,10:40,right,0,3963.104,1,23/03/2015,English,,,female,Pre,DO,Pred
+8jgAPlNrNhf7NHal2NhRU5cKP,7,3Pre2,Peppa_Pig_will_send_the_hamster_a_toy,Can_you_send_the_hamster_the_toy?,right,left,pretest,07/08/2019,10:40,left,0,2750.104,1,23/03/2015,English,,,female,Pre,DO,Pred
+8jgAPlNrNhf7NHal2NhRU5cKP,8,5Pre2,The_queen_will_send_the_monkey_a_horse,Can_you_send_the_monkey_the_horse?,left,right,pretest,07/08/2019,10:40,right,0,5063.104,1,23/03/2015,English,,,female,Pre,DO,Pred
+8jgAPlNrNhf7NHal2NhRU5cKP,9,6Pre2,Emily_elephant_will_bring_the_mouse_a_rabbit,Can_you_bring_the_mouse_the_rabbit?,right,left,pretest,07/08/2019,10:40,right,1,1398.104,1,23/03/2015,English,,,female,Pre,DO,Pred
+8jgAPlNrNhf7NHal2NhRU5cKP,10,1Pre2,The_boy_will_bring_the_giraffe_a_cake,Can_you_bring_the_giraffe_the_cake?,left,right,pretest,07/08/2019,10:40,left,1,2248.104,1,23/03/2015,English,,,female,Pre,DO,Pred

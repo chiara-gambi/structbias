@@ -1,0 +1,11 @@
+subject_id,trial_number,trial_id,target_sentence,question,target_side,other_side,trial_type,date_stamp,time_stamp,side_chosen,accuracy,rt,play_counter,date_of_birth,native_lang,other_langs,dev_info,gender,order,sentence_type,animacy
+8j4VM43BeCn8rJgGNRSr36Zqu,1,4fillerpost2,The_prince_will_move_the_blanket_to_the_sofa,Can_you_move_the_blanket_to_the_sofa?,right,left,posttest_filler,7/1/2019,09:58,right,1,1660.135,1,20/05/15,English,,,male,Post,PO,Pred
+8j4VM43BeCn8rJgGNRSr36Zqu,2,3fillerpost2,Dora_the_explorer_will_put_the_food_in_the_basket,Can_you_put_the_food_in_the_basket?,left,right,posttest_filler,7/1/2019,09:58,left,1,1084.135,1,20/05/15,English,,,male,Post,PO,Pred
+8j4VM43BeCn8rJgGNRSr36Zqu,3,4FillerPre2,The_king_will_poke_the_jelly_with_the_fork,Can_you_poke_the_jelly_with_the_fork?,right,left,pretest_filler,7/1/2019,09:58,right,1,1963.135,1,20/05/15,English,,,male,Post,PO,Pred
+8j4VM43BeCn8rJgGNRSr36Zqu,4,4Pre2,The_king_will_throw_the_turtle_a_squirrel,Can_you_throw_the_turtle_the_squirrel?,left,right,pretest,7/1/2019,09:58,right,0,978.135,1,20/05/15,English,,,male,Post,PO,Pred
+8j4VM43BeCn8rJgGNRSr36Zqu,5,1FillerPre2,Peppa_pig_will_bounce_the_ball_with_the_bat,Can_you_bounce_the_ball_with_the_bat?,left,right,pretest_filler,7/1/2019,09:58,right,0,3366.135,1,20/05/15,English,,,male,Post,PO,Pred
+8j4VM43BeCn8rJgGNRSr36Zqu,6,1Pre2,The_boy_will_bring_the_giraffe_a_cake,Can_you_bring_the_giraffe_the_cake?,left,right,pretest,7/1/2019,09:58,left,1,1281.135,1,20/05/15,English,,,male,Post,PO,Pred
+8j4VM43BeCn8rJgGNRSr36Zqu,7,5Pre2,The_queen_will_send_the_monkey_a_horse,Can_you_send_the_monkey_the_horse?,right,left,pretest,7/1/2019,09:58,right,1,1708.135,1,20/05/15,English,,,male,Post,PO,Pred
+8j4VM43BeCn8rJgGNRSr36Zqu,8,6Pre2,Emily_elephant_will_bring_the_mouse_a_rabbit,Can_you_bring_the_mouse_the_rabbit?,right,left,pretest,7/1/2019,09:58,left,0,1550.135,1,20/05/15,English,,,male,Post,PO,Pred
+8j4VM43BeCn8rJgGNRSr36Zqu,9,2Pre2,The_girl_will_throw_the_elephant_a_clock,Can_you_throw_the_elephant_the_clock?,right,left,pretest,7/1/2019,09:58,right,1,2877.135,1,20/05/15,English,,,male,Post,PO,Pred
+8j4VM43BeCn8rJgGNRSr36Zqu,10,3Pre2,Peppa_Pig_will_send_the_hamster_a_toy,Can_you_send_the_hamster_the_toy?,left,right,pretest,7/1/2019,09:58,right,0,1788.135,1,20/05/15,English,,,male,Post,PO,Pred

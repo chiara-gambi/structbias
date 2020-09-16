@@ -1,0 +1,13 @@
+subject_id,trial_number,trial_id,target_sentence,target_side,other_side,trial_type,date_stamp,time_stamp,side_chosen,accuracy,rt,play_counter,order,sentence_type,animacy
+ytr8oy4TiuxsTQF9bLYCCuCrn,1,5poup,The_girl_will_pass_the_bird_to_the_sheep,left,right,training,6/28/2019,9:55,left,1,8417.317,1,Pre,PO,NonPred
+ytr8oy4TiuxsTQF9bLYCCuCrn,2,10poup,Boots_will_send_the_pig_to_the_caterpillar,left,right,training,6/28/2019,9:55,left,1,2636.316999999999,1,Pre,PO,NonPred
+ytr8oy4TiuxsTQF9bLYCCuCrn,3,7poup,Bob_the_builder_will_throw_the_dog_to_the_penguin,right,left,training,6/28/2019,9:55,right,1,5109.316999999999,1,Pre,PO,NonPred
+ytr8oy4TiuxsTQF9bLYCCuCrn,4,2poup,Tigger_will_give_the_butterfly_to_the_zebra,right,left,training,6/28/2019,9:55,right,1,3150.316999999999,1,Pre,PO,NonPred
+ytr8oy4TiuxsTQF9bLYCCuCrn,5,6poup,Piglet_will_show_the_ant_to_the_fish,right,left,training,6/28/2019,9:55,right,1,1607.316999999999,1,Pre,PO,NonPred
+ytr8oy4TiuxsTQF9bLYCCuCrn,6,4poup,George_will_send_the_fox_to_the_donkey,left,right,training,6/28/2019,9:55,left,1,1488.316999999999,1,Pre,PO,NonPred
+ytr8oy4TiuxsTQF9bLYCCuCrn,7,8poup,Chase_will_give_the_deer_to_the_kitten,left,right,training,6/28/2019,9:55,left,1,2704.316999999999,1,Pre,PO,NonPred
+ytr8oy4TiuxsTQF9bLYCCuCrn,8,3poup,Rebecca_Rabbit_will_bring_the_frog_to_the_chicken,right,left,training,6/28/2019,9:55,right,1,3393.316999999999,1,Pre,PO,NonPred
+ytr8oy4TiuxsTQF9bLYCCuCrn,9,1poup,The_boy_will_throw_the_dinosaur_to_the_bear,left,right,training,6/28/2019,9:55,left,1,3320.316999999999,1,Pre,PO,NonPred
+ytr8oy4TiuxsTQF9bLYCCuCrn,10,9poup,Dora_the_explorer_will_bring_the_cow_to_the_hippo,left,right,training,6/28/2019,9:55,left,1,1862.316999999999,1,Pre,PO,NonPred
+ytr8oy4TiuxsTQF9bLYCCuCrn,11,12poup,Winnie_the_pooh_will_show_the_owl_to_the_duck,right,left,training,6/28/2019,9:55,right,1,1928.316999999999,1,Pre,PO,NonPred
+ytr8oy4TiuxsTQF9bLYCCuCrn,12,11poup,Marshall_will_pass_the_goat_to_the_bee,right,left,training,6/28/2019,9:55,right,1,1214.316999999999,1,Pre,PO,NonPred

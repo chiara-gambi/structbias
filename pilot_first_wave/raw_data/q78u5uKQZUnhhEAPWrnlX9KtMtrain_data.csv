@@ -1,0 +1,13 @@
+subject_id,trial_number,trial_id,target_sentence,target_side,other_side,trial_type,date_stamp,time_stamp,side_chosen,accuracy,rt,play_counter,order,sentence_type,animacy
+q78u5uKQZUnhhEAPWrnlX9KtM,1,9pop,Dora_the_explorer_will_bring_the_spoon_to_the_hippo,left,right,training,6/14/2019,09:46,left,1,4019.852,1,Post,PO,Pred
+q78u5uKQZUnhhEAPWrnlX9KtM,2,8pop,Chase_will_give_the_biscuit_to_the_kitten,right,left,training,6/14/2019,09:46,right,1,6284.852,1,Post,PO,Pred
+q78u5uKQZUnhhEAPWrnlX9KtM,3,1pop,The_boy_will_throw_the_cheese_to_the_bear,right,left,training,6/14/2019,09:46,right,1,6147.852,1,Post,PO,Pred
+q78u5uKQZUnhhEAPWrnlX9KtM,4,4pop,George_will_send_the_brush_to_the_donkey,right,left,training,6/14/2019,09:46,right,1,5233.852,1,Post,PO,Pred
+q78u5uKQZUnhhEAPWrnlX9KtM,5,10pop,Boots_will_send_the_flower_to_the_caterpillar,right,left,training,6/14/2019,09:46,right,1,4753.852,1,Post,PO,Pred
+q78u5uKQZUnhhEAPWrnlX9KtM,6,11pop,Marshall_will_pass_the_gloves_to_the_bee,left,right,training,6/14/2019,09:46,left,1,3540.852,1,Post,PO,Pred
+q78u5uKQZUnhhEAPWrnlX9KtM,7,7pop,Bob_the_builder_will_throw_the_shoe_to_the_penguin,right,left,training,6/14/2019,09:46,right,1,3940.852,1,Post,PO,Pred
+q78u5uKQZUnhhEAPWrnlX9KtM,8,6pop,Piglet_will_show_the_plate_to_the_fish,right,left,training,6/14/2019,09:46,right,1,7596.852,1,Post,PO,Pred
+q78u5uKQZUnhhEAPWrnlX9KtM,9,3pop,Rebecca_Rabbit_will_bring_the_pencil_to_the_chicken,left,right,training,6/14/2019,09:46,left,1,2880.852,1,Post,PO,Pred
+q78u5uKQZUnhhEAPWrnlX9KtM,10,5pop,The_girl_will_pass_the_dress_to_the_sheep,left,right,training,6/14/2019,09:46,left,1,2798.852,1,Post,PO,Pred
+q78u5uKQZUnhhEAPWrnlX9KtM,11,12pop,Winnie_the_pooh_will_show_the_frisbee_to_the_duck,left,right,training,6/14/2019,09:46,left,1,7220.852,1,Post,PO,Pred
+q78u5uKQZUnhhEAPWrnlX9KtM,12,2pop,Tigger_will_give_the_bottle_to_the_zebra,left,right,training,6/14/2019,09:46,left,1,2052.852,1,Post,PO,Pred

@@ -1,0 +1,13 @@
+subject_id,trial_number,trial_id,target_sentence,target_side,other_side,trial_type,date_stamp,time_stamp,side_chosen,accuracy,rt,play_counter,order,sentence_type,animacy
+uU8qHigBMasgRxGCU4QQwPHCR,1,6pop,Piglet_will_show_the_plate_to_the_fish,left,right,training,7/8/2019,9:19,left,1,8931.1857,1,Post,PO,Pred
+uU8qHigBMasgRxGCU4QQwPHCR,2,3pop,Rebecca_Rabbit_will_bring_the_pencil_to_the_chicken,right,left,training,7/8/2019,9:19,right,1,10020.1857,1,Post,PO,Pred
+uU8qHigBMasgRxGCU4QQwPHCR,3,2pop,Tigger_will_give_the_bottle_to_the_zebra,left,right,training,7/8/2019,9:19,left,1,8466.1857,1,Post,PO,Pred
+uU8qHigBMasgRxGCU4QQwPHCR,4,5pop,The_girl_will_pass_the_dress_to_the_sheep,left,right,training,7/8/2019,9:19,left,1,8994.1857,1,Post,PO,Pred
+uU8qHigBMasgRxGCU4QQwPHCR,5,4pop,George_will_send_the_brush_to_the_donkey,right,left,training,7/8/2019,9:19,right,1,25417.1857,1,Post,PO,Pred
+uU8qHigBMasgRxGCU4QQwPHCR,6,9pop,Dora_the_explorer_will_bring_the_spoon_to_the_hippo,right,left,training,7/8/2019,9:19,left,0,13821.1857,1,Post,PO,Pred
+uU8qHigBMasgRxGCU4QQwPHCR,7,12pop,Winnie_the_pooh_will_show_the_frisbee_to_the_duck,right,left,training,7/8/2019,9:19,right,1,25012.1857,1,Post,PO,Pred
+uU8qHigBMasgRxGCU4QQwPHCR,8,7pop,Bob_the_builder_will_throw_the_shoe_to_the_penguin,right,left,training,7/8/2019,9:19,right,1,9481.1857,1,Post,PO,Pred
+uU8qHigBMasgRxGCU4QQwPHCR,9,10pop,Boots_will_send_the_flower_to_the_caterpillar,left,right,training,7/8/2019,9:19,left,1,4289.1857,1,Post,PO,Pred
+uU8qHigBMasgRxGCU4QQwPHCR,10,8pop,Chase_will_give_the_biscuit_to_the_kitten,left,right,training,7/8/2019,9:19,left,1,5091.1857,1,Post,PO,Pred
+uU8qHigBMasgRxGCU4QQwPHCR,11,11pop,Marshall_will_pass_the_gloves_to_the_bee,left,right,training,7/8/2019,9:19,left,1,4948.1857,1,Post,PO,Pred
+uU8qHigBMasgRxGCU4QQwPHCR,12,1pop,The_boy_will_throw_the_cheese_to_the_bear,right,left,training,7/8/2019,9:19,right,1,8043.1857,1,Post,PO,Pred

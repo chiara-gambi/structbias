@@ -1,0 +1,11 @@
+subject_id,trial_number,trial_id,target_sentence,question,target_side,other_side,trial_type,date_stamp,time_stamp,side_chosen,accuracy,rt,play_counter,date_of_birth,native_lang,other_langs,dev_info,gender,order,sentence_type,animacy
+iLumJFeKJT74QSXxlJLJx63CE,1,4fillerpost2,The_prince_will_move_the_blanket_to_the_sofa,Can_you_move_the_blanket_to_the_sofa?,right,left,posttest_filler,7/18/2019,11:09,right,1,3102.135,1,25/07/15,English,,,female,Post,PO,Pred
+iLumJFeKJT74QSXxlJLJx63CE,2,3fillerpost2,Dora_the_explorer_will_put_the_food_in_the_basket,Can_you_put_the_food_in_the_basket?,left,right,posttest_filler,7/18/2019,11:09,left,1,1063.135,1,25/07/15,English,,,female,Post,PO,Pred
+iLumJFeKJT74QSXxlJLJx63CE,3,2Pre2,The_girl_will_throw_the_elephant_a_clock,Can_you_throw_the_elephant_the_clock?,right,left,pretest,7/18/2019,11:09,left,0,3410.135,1,25/07/15,English,,,female,Post,PO,Pred
+iLumJFeKJT74QSXxlJLJx63CE,4,5Pre2,The_queen_will_send_the_monkey_a_horse,Can_you_send_the_monkey_the_horse?,left,right,pretest,7/18/2019,11:09,right,0,2145.135,1,25/07/15,English,,,female,Post,PO,Pred
+iLumJFeKJT74QSXxlJLJx63CE,5,1Pre2,The_boy_will_bring_the_giraffe_a_cake,Can_you_bring_the_giraffe_the_cake?,right,left,pretest,7/18/2019,11:09,left,0,1325.135,1,25/07/15,English,,,female,Post,PO,Pred
+iLumJFeKJT74QSXxlJLJx63CE,6,3Pre2,Peppa_Pig_will_send_the_hamster_a_toy,Can_you_send_the_hamster_the_toy?,left,right,pretest,7/18/2019,11:09,left,1,493.135,2,25/07/15,English,,,female,Post,PO,Pred
+iLumJFeKJT74QSXxlJLJx63CE,7,4Pre2,The_king_will_throw_the_turtle_a_squirrel,Can_you_throw_the_turtle_the_squirrel?,right,left,pretest,7/18/2019,11:09,right,1,427.135,1,25/07/15,English,,,female,Post,PO,Pred
+iLumJFeKJT74QSXxlJLJx63CE,8,1FillerPre2,Peppa_pig_will_bounce_the_ball_with_the_bat,Can_you_bounce_the_ball_with_the_bat?,right,left,pretest_filler,7/18/2019,11:09,left,0,558.135,1,25/07/15,English,,,female,Post,PO,Pred
+iLumJFeKJT74QSXxlJLJx63CE,9,4FillerPre2,The_king_will_poke_the_jelly_with_the_fork,Can_you_poke_the_jelly_with_the_fork?,left,right,pretest_filler,7/18/2019,11:09,right,0,912.135,1,25/07/15,English,,,female,Post,PO,Pred
+iLumJFeKJT74QSXxlJLJx63CE,10,6Pre2,Emily_elephant_will_bring_the_mouse_a_rabbit,Can_you_bring_the_mouse_the_rabbit?,left,right,pretest,7/18/2019,11:09,left,1,2309.135,1,25/07/15,English,,,female,Post,PO,Pred

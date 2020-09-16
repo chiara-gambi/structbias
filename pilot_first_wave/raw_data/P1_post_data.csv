@@ -1,0 +1,11 @@
+subject_id,trial_number,trial_id,target_sentence,question,target_side,other_side,trial_type,date_stamp,time_stamp,side_chosen,accuracy,rt,play_counter,date_of_birth,native_lang,other_langs,dev_info,gender,order,sentence_type,animacy
+P1,1,4fillerpost2,The_prince_will_move_the_blanket_to_the_sofa,Can_you_move_the_blanket_to_the_sofa?,right,left,posttest_filler,4/15/2019,10:01,right,1,3011.135,1,17/08/2014,ENGLISH,,,male,Pre,PO,Pred
+P1,2,3fillerpost2,Dora_the_explorer_will_put_the_food_in_the_basket,Can_you_put_the_food_in_the_basket?,left,right,posttest_filler,4/15/2019,10:01,left,1,2198.135,1,17/08/2014,ENGLISH,,,male,Pre,PO,Pred
+P1,3,5post2,The_prince_will_bring_the_turtle_a_cat,Can_you_bring_the_turtle_the_cat?,left,right,posttest,4/15/2019,10:01,right,0,2753.135,1,17/08/2014,ENGLISH,,,male,Pre,PO,Pred
+P1,4,2post2,The_girl_will_bring_the_horse_an_ice_cream,Can_you_bring_the_horse_the_ice_cream?,right,left,posttest,4/15/2019,10:01,right,1,6143.135,1,17/08/2014,ENGLISH,,,male,Pre,PO,Pred
+P1,5,6post2,Dora_the_explorer_will_throw_the_puppy_a_hamster,Can_you_throw_puppy_the_hamster?,left,right,posttest,4/15/2019,10:01,right,0,2714.135,1,17/08/2014,ENGLISH,,,male,Pre,PO,Pred
+P1,6,1fillerpost2,The_princess_will_tickle_the_teddy_bear_with_the_feather,Can_you_tickle_the_teddy_bear_with_the_feather?,left,right,posttest_filler,4/15/2019,10:01,left,1,1825.135,1,17/08/2014,ENGLISH,,,male,Pre,PO,Pred
+P1,7,3post2,Boots_will_throw_the_giraffe_a_balloon,Can_you_throw_the_giraffe_the_balloon?,left,right,posttest,4/15/2019,10:01,right,0,2625.135,1,17/08/2014,ENGLISH,,,male,Pre,PO,Pred
+P1,8,4Post2,The_princess_will_send_the_lion_a_crocodile,Can_you_send_the_lion_the_crocodile?,right,left,posttest,4/15/2019,10:01,left,0,2956.135,1,17/08/2014,ENGLISH,,,male,Pre,PO,Pred
+P1,9,1Post2,The_boy_will_send_the_tiger_a_present,Can_you_send_the_tiger_the_present?,right,left,posttest,4/15/2019,10:01,right,1,3921.135,1,17/08/2014,ENGLISH,,,male,Pre,PO,Pred
+P1,10,2fillerpost2,Boots_will_clean_the_chair_with_the_sponge,Can_you_clean_the_chair_with_the_sponge?,right,left,posttest_filler,4/15/2019,10:01,right,1,3134.135,1,17/08/2014,ENGLISH,,,male,Pre,PO,Pred

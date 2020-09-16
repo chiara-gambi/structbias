@@ -1,0 +1,13 @@
+subject_id,trial_number,trial_id,target_sentence,target_side,other_side,trial_type,date_stamp,time_stamp,side_chosen,accuracy,rt,play_counter,order,sentence_type,animacy
+sS95IKhhSCDO5e4FCsDRcn1SJ,1,6doup,Piglet_will_show_the_fish_the_ant,left,right,training,6/25/2019,11:12,left,1,6914.351999999999,1,Post,DO,NonPred
+sS95IKhhSCDO5e4FCsDRcn1SJ,2,2doup,Tigger_will_give_the_zebra_the_butterfly,right,left,training,6/25/2019,11:12,right,1,5902.351999999999,1,Post,DO,NonPred
+sS95IKhhSCDO5e4FCsDRcn1SJ,3,1doup,The_boy_will_throw_the_bear_the_dinosaur,left,right,training,6/25/2019,11:12,left,1,6432.351999999999,1,Post,DO,NonPred
+sS95IKhhSCDO5e4FCsDRcn1SJ,4,11doup,Marshall_will_pass_the_bee_the_goat,left,right,training,6/25/2019,11:12,right,0,3074.351999999999,1,Post,DO,NonPred
+sS95IKhhSCDO5e4FCsDRcn1SJ,5,7doup,Bob_the_builder_will_throw_the_penguin_the_dog,right,left,training,6/25/2019,11:12,right,1,7061.351999999999,1,Post,DO,NonPred
+sS95IKhhSCDO5e4FCsDRcn1SJ,6,5doup,The_girl_will_pass_the_sheep_the_bird,left,right,training,6/25/2019,11:12,left,1,6199.351999999999,1,Post,DO,NonPred
+sS95IKhhSCDO5e4FCsDRcn1SJ,7,9doup,Dora_the_explorer_will_bring_the_hippo_the_cow,left,right,training,6/25/2019,11:12,left,1,4346.351999999999,1,Post,DO,NonPred
+sS95IKhhSCDO5e4FCsDRcn1SJ,8,4doup,George_will_send_the_donkey_the_fox,right,left,training,6/25/2019,11:12,left,0,12938.351999999999,1,Post,DO,NonPred
+sS95IKhhSCDO5e4FCsDRcn1SJ,9,8doup,Chase_will_give_the_kitten_the_deer,right,left,training,6/25/2019,11:12,right,1,5552.351999999999,1,Post,DO,NonPred
+sS95IKhhSCDO5e4FCsDRcn1SJ,10,12doup,Winnie_the_pooh_will_show_the_duck_the_owl,left,right,training,6/25/2019,11:12,left,1,5715.351999999999,1,Post,DO,NonPred
+sS95IKhhSCDO5e4FCsDRcn1SJ,11,3doup,Rebecca_Rabbit_will_bring_the_chicken_the_frog,right,left,training,6/25/2019,11:12,right,1,4101.351999999999,1,Post,DO,NonPred
+sS95IKhhSCDO5e4FCsDRcn1SJ,12,10doup,Boots_will_send_the_caterpillar_to_the_pig,right,left,training,6/25/2019,11:12,right,1,3586.351999999999,1,Post,DO,NonPred
