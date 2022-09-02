@@ -1,0 +1,13 @@
+subject_id,trial_number,trial_id,target_sentence,target_side,other_side,trial_type,date_stamp,time_stamp,side_chosen,accuracy,rt,play_counter,order,sentence_type,animacy
+EHn84mcF7lpjQ0uR89Bzd0cEQ,1,10doup,Boots_will_send_the_caterpillar_the_pig,left,right,training,3/1/2022,11:59,left,1,10650.187,1,Pre,DO,NonPred
+EHn84mcF7lpjQ0uR89Bzd0cEQ,2,4doup,George_will_send_the_donkey_the_fox,left,right,training,3/1/2022,11:59,left,1,6616.187,2,Pre,DO,NonPred
+EHn84mcF7lpjQ0uR89Bzd0cEQ,3,9doup,Dora_the_explorer_will_bring_the_hippo_the_cow,right,left,training,3/1/2022,11:59,right,1,8520.187,1,Pre,DO,NonPred
+EHn84mcF7lpjQ0uR89Bzd0cEQ,4,11doup,Marshall_will_pass_the_bee_the_goat,left,right,training,3/1/2022,11:59,left,1,6688.187,1,Pre,DO,NonPred
+EHn84mcF7lpjQ0uR89Bzd0cEQ,5,12doup,Winnie_the_pooh_will_show_the_duck_the_owl,right,left,training,3/1/2022,11:59,right,1,10806.187,1,Pre,DO,NonPred
+EHn84mcF7lpjQ0uR89Bzd0cEQ,6,5doup,The_girl_will_pass_the_sheep_the_bird,right,left,training,3/1/2022,11:59,right,1,7153.187,1,Pre,DO,NonPred
+EHn84mcF7lpjQ0uR89Bzd0cEQ,7,8doup,Chase_will_give_the_kitten_the_deer,left,right,training,3/1/2022,11:59,left,1,6210.187,1,Pre,DO,NonPred
+EHn84mcF7lpjQ0uR89Bzd0cEQ,8,2doup,Tigger_will_give_the_zebra_the_butterfly,right,left,training,3/1/2022,11:59,right,1,8115.187,1,Pre,DO,NonPred
+EHn84mcF7lpjQ0uR89Bzd0cEQ,9,1doup,The_boy_will_throw_the_bear_the_dinosaur,left,right,training,3/1/2022,11:59,left,1,8035.187,1,Pre,DO,NonPred
+EHn84mcF7lpjQ0uR89Bzd0cEQ,10,6doup,Piglet_will_show_the_fish_the_ant,left,right,training,3/1/2022,11:59,left,1,4713.187,1,Pre,DO,NonPred
+EHn84mcF7lpjQ0uR89Bzd0cEQ,11,7doup,Bob_the_builder_will_throw_the_penguin_the_dog,right,left,training,3/1/2022,11:59,right,1,7913.187,1,Pre,DO,NonPred
+EHn84mcF7lpjQ0uR89Bzd0cEQ,12,3doup,Rebecca_Rabbit_will_bring_the_chicken_the_frog,right,left,training,3/1/2022,11:59,right,1,6952.187,1,Pre,DO,NonPred

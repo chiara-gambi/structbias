@@ -1,0 +1,13 @@
+subject_id,trial_number,trial_id,target_sentence,target_side,other_side,trial_type,date_stamp,time_stamp,side_chosen,accuracy,rt,play_counter,order,sentence_type,animacy
+9wZUphPqxE4pSTMvu4dpMrJuT,1,12doup,Winnie_the_pooh_will_show_the_duck_the_owl,left,right,training,1/20/2022,16:08,left,1,15379.012,1,Post,DO,NonPred
+9wZUphPqxE4pSTMvu4dpMrJuT,2,8doup,Chase_will_give_the_kitten_the_deer,left,right,training,1/20/2022,16:08,left,1,6344.012000000001,1,Post,DO,NonPred
+9wZUphPqxE4pSTMvu4dpMrJuT,3,10doup,Boots_will_send_the_caterpillar_the_pig,right,left,training,1/20/2022,16:08,right,1,5714.012000000001,1,Post,DO,NonPred
+9wZUphPqxE4pSTMvu4dpMrJuT,4,2doup,Tigger_will_give_the_zebra_the_butterfly,right,left,training,1/20/2022,16:08,right,1,3976.0120000000006,1,Post,DO,NonPred
+9wZUphPqxE4pSTMvu4dpMrJuT,5,4doup,George_will_send_the_donkey_the_fox,right,left,training,1/20/2022,16:08,right,1,3725.0120000000006,1,Post,DO,NonPred
+9wZUphPqxE4pSTMvu4dpMrJuT,6,7doup,Bob_the_builder_will_throw_the_penguin_the_dog,left,right,training,1/20/2022,16:08,left,1,4727.012000000001,1,Post,DO,NonPred
+9wZUphPqxE4pSTMvu4dpMrJuT,7,9doup,Dora_the_explorer_will_bring_the_hippo_the_cow,right,left,training,1/20/2022,16:08,right,1,4580.012000000001,1,Post,DO,NonPred
+9wZUphPqxE4pSTMvu4dpMrJuT,8,11doup,Marshall_will_pass_the_bee_the_goat,left,right,training,1/20/2022,16:08,left,1,2494.0120000000006,1,Post,DO,NonPred
+9wZUphPqxE4pSTMvu4dpMrJuT,9,1doup,The_boy_will_throw_the_bear_the_dinosaur,left,right,training,1/20/2022,16:08,left,1,4038.0120000000006,1,Post,DO,NonPred
+9wZUphPqxE4pSTMvu4dpMrJuT,10,5doup,The_girl_will_pass_the_sheep_the_bird,right,left,training,1/20/2022,16:08,right,1,4593.012000000001,1,Post,DO,NonPred
+9wZUphPqxE4pSTMvu4dpMrJuT,11,3doup,Rebecca_Rabbit_will_bring_the_chicken_the_frog,left,right,training,1/20/2022,16:08,left,1,2183.0120000000006,1,Post,DO,NonPred
+9wZUphPqxE4pSTMvu4dpMrJuT,12,6doup,Piglet_will_show_the_fish_the_ant,right,left,training,1/20/2022,16:08,right,1,3516.0120000000006,1,Post,DO,NonPred

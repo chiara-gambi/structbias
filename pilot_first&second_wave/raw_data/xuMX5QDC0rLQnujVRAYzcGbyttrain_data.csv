@@ -1,0 +1,13 @@
+subject_id,trial_number,trial_id,target_sentence,target_side,other_side,trial_type,date_stamp,time_stamp,side_chosen,accuracy,rt,play_counter,order,sentence_type,animacy
+xuMX5QDC0rLQnujVRAYzcGbyt,1,8pop,Chase_will_give_the_biscuit_to_the_kitten,right,left,training,5/15/2022,14:20,right,1,12067.189,1,Pre,PO,Pred
+xuMX5QDC0rLQnujVRAYzcGbyt,2,10pop,Boots_will_send_the_flower_to_the_caterpillar,left,right,training,5/15/2022,14:20,left,1,7403.189,1,Pre,PO,Pred
+xuMX5QDC0rLQnujVRAYzcGbyt,3,2pop,Tigger_will_give_the_bottle_to_the_zebra,right,left,training,5/15/2022,14:20,right,1,6519.189,1,Pre,PO,Pred
+xuMX5QDC0rLQnujVRAYzcGbyt,4,9pop,Dora_the_explorer_will_bring_the_spoon_to_the_hippo,left,right,training,5/15/2022,14:20,left,1,8570.189,1,Pre,PO,Pred
+xuMX5QDC0rLQnujVRAYzcGbyt,5,5pop,The_girl_will_pass_the_dress_to_the_sheep,right,left,training,5/15/2022,14:20,right,1,6512.189,1,Pre,PO,Pred
+xuMX5QDC0rLQnujVRAYzcGbyt,6,11pop,Marshall_will_pass_the_gloves_to_the_bee,left,right,training,5/15/2022,14:20,left,1,4799.189,1,Pre,PO,Pred
+xuMX5QDC0rLQnujVRAYzcGbyt,7,4pop,George_will_send_the_brush_to_the_donkey,left,right,training,5/15/2022,14:20,left,1,7290.189,1,Pre,PO,Pred
+xuMX5QDC0rLQnujVRAYzcGbyt,8,12pop,Winnie_the_pooh_will_show_the_frisbee_to_the_duck,right,left,training,5/15/2022,14:20,right,1,7451.189,1,Pre,PO,Pred
+xuMX5QDC0rLQnujVRAYzcGbyt,9,3pop,Rebecca_Rabbit_will_bring_the_pencil_to_the_chicken,left,right,training,5/15/2022,14:20,left,1,4059.1890000000003,1,Pre,PO,Pred
+xuMX5QDC0rLQnujVRAYzcGbyt,10,1pop,The_boy_will_throw_the_cheese_to_the_bear,right,left,training,5/15/2022,14:20,right,1,7509.189,1,Pre,PO,Pred
+xuMX5QDC0rLQnujVRAYzcGbyt,11,7pop,Bob_the_builder_will_throw_the_shoe_to_the_penguin,left,right,training,5/15/2022,14:20,left,1,5294.189,1,Pre,PO,Pred
+xuMX5QDC0rLQnujVRAYzcGbyt,12,6pop,Piglet_will_show_the_plate_to_the_fish,right,left,training,5/15/2022,14:20,right,1,6423.189,1,Pre,PO,Pred
