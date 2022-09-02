@@ -1,7 +1,7 @@
 ---
   title: "Structure Prediction and Learning Pilot Analyses"
   author: "Chiara Gambi"
-  date: "06/05/2020"
+  date: "02/09/2022"
   output: 
     html_document:
       toc: true
@@ -12,7 +12,7 @@
 ---
 # Background
 
-The analyses below are based on 98 children (mostly 4 year olds, but one had already turned five at the time of testing). We actually tested 24 more children, but data for these had to be discarded after we discovered an error in the training phase for the DO NonPred condition: one of the sentence recordings (out of 12 training trials) was mistakenly in the PO form rather than the DO form. Data from these kids were discarded and we tested 20 more kids after fixing the error. Note that this means we did not counterbalance assignment of children to conditions. When I compared the findings from the 24 children originally tested on the incorrect version to those from the 20 children tested on the corrected version, no differences were noticeable. In any case, the analyses below only include data from children tested on the correct version. The error did not affect the PO Pred, PO NonPred and DO Pred training conditions. Testing took place either in the lab or at the child's nursery.
+The analyses below are based on 120 children (mostly 4 year olds, but a few had already turned five at the time of testing). We actually tested 24 more children, but data for these had to be discarded after we discovered an error in the training phase for the DO NonPred condition: one of the sentence recordings (out of 12 training trials) was mistakenly in the PO form rather than the DO form. Data from these kids were discarded and we tested 20 more kids after fixing the error. Note that this means we did not counterbalance assignment of children to conditions. When I compared the findings from the 24 children originally tested on the incorrect version to those from the 20 children tested on the corrected version, no differences were noticeable. In any case, the analyses below only include data from children tested on the correct version. The error did not affect the PO Pred, PO NonPred and DO Pred training conditions. Testing took place either in the lab or at the child's nursery.
 
 
 ```{r setup, include=FALSE}
@@ -29,6 +29,7 @@ library(bootstrap)
 library(stringr)
 library(lubridate)
 library(knitr)
+library(RColorBrewer)
 
 ## CI
 ## from Micheal Frank's github
@@ -39,11 +40,10 @@ ci.low <- function(x,na.rm=T) {
 ci.high <- function(x,na.rm=T) {
   quantile(bootstrap(1:length(x),1000,theta,x,na.rm=na.rm)$thetastar,.975,na.rm=na.rm) - mean(x,na.rm=na.rm)}
 
-
 #Load in data
-setwd("~/OneDrive - Cardiff University/Cardiff/research/Pred&Learn/structure_pred/data/all_pilot")
-pre_data<-read.table("pre-test-all-pilot.txt",header = T)
-post_data<-read.table("post-test-all-pilot.txt",header= T)
+# first and second wave
+pre_data<-read.table("https://raw.githubusercontent.com/chiara-gambi/structbias/master/pilot_first&second_wave/compiled_data/pre-test-all-pilot.txt",header = T)
+post_data<-read.table("https://raw.githubusercontent.com/chiara-gambi/structbias/master/pilot_first&second_wave/compiled_data/post-test-all-pilot.txt",header= T)
 
 # List of animate-animate trials
 AA<-c("4Pre2","6Pre2","5Pre2","4Post2","5post2","6post2")
@@ -82,16 +82,21 @@ all_data.mean<-summaryBy(accuracy~sentence_type+animacy+trial_animacy+phase,data
 all_data.mean$condition<-paste(all_data.mean$sentence_type,all_data.mean$animacy)
 
 #plot
+all_data.mean$condition<-as.factor(all_data.mean$condition)
+levels(all_data.mean$condition)<-c("DO/NonPred","DO/Pred","PO/NonPred","PO/Pred")
 all_data.mean$phase<-relevel(as.factor(all_data.mean$phase),ref="Pre-test")
 all_data.mean$trial_animacy<-relevel(as.factor(all_data.mean$trial_animacy),ref="AI")
 levels(all_data.mean$trial_animacy)<-c("Animate-Inanimate","Animate-Animate")
-ggplot(all_data.mean,aes(x=condition,y=accuracy.mean,col=phase))+
+pre_post_by_animacy<-ggplot(all_data.mean,aes(x=condition,y=accuracy.mean,fill=phase))+
   geom_bar(position=position_dodge(), stat="identity")+
   geom_errorbar(aes(ymin=accuracy.mean-accuracy.ci.low,ymax=accuracy.mean+accuracy.ci.high),position = position_dodge(width=.9), size =0.5, width=0.2)+
   facet_grid(.~trial_animacy)+
   xlab("Training condition")+
   ylab("Accuracy")+
-  theme(legend.position = "bottom",axis.text.x = element_text(size = 9))
+  ggtitle("Test Trial type")+
+  scale_fill_brewer(palette="Dark2")+
+  theme(legend.position = "bottom",axis.text.x = element_text(size = 7,face="bold"),axis.title.x = element_text(size = 14),title=element_text(size = 10))
+ggsave("pre_post_by_trial_animacy.png",plot=pre_post_by_animacy,path=getwd())
 
 #plot range of pre-test scores
 all_data.subj$phase<-relevel(as.factor(all_data.subj$phase),ref="Pre-test")
@@ -184,7 +189,7 @@ Summary.
 
   * main effect of pre-test accuracy -- higher accuracy in post-test if higher accuracy in pre-test
   * main effect of trial animacy -- higher accuracy for AI test items
-  * interaction between sentence type and trial animacy -- the advantage for AI over AA is smaller if training == DO
+  * **marginal** interaction between sentence type and trial animacy -- the advantage for AI over AA is smaller if training == DO
 
 
 ```{r ANCOVA}
@@ -210,11 +215,10 @@ all.tp.w$TAC<-ifelse(all.tp.w$trial_animacy=="AI",-.5,.5)
 all.tp.w$TACC<-scale(all.tp.w$TAC,T,F)
 all.tp.w$PC<-scale(all.tp.w$`accuracy.Pre-test`,T,F)
 
-m.tp.ANCOVA.int<-glmer(`accuracy.Post-test`~PC*SCC*ACC*TACC+(1|subject_id)+(1|verb),data=all.tp.w, family="binomial", glmerControl(optimizer = "bobyqa"))
-#summary(m.tp.ANCOVA.int)
+m.tp.ANCOVA<-glmer(`accuracy.Post-test`~PC+SCC*ACC*TACC+(1|subject_id),data=all.tp.w, family="binomial", glmerControl(optimizer = "bobyqa"))
 
-summary(m.tp.ANCOVA.int)$call
-kable(data.frame(coef(summary(m.tp.ANCOVA.int))),caption = "Post-test accuracy, controlling for Pre-test accuracy - Model")
+summary(m.tp.ANCOVA)$call
+kable(data.frame(coef(summary(m.tp.ANCOVA))),caption = "Post-test accuracy, controlling for Pre-test accuracy - Model")
 
 ```
 
@@ -223,25 +227,174 @@ kable(data.frame(coef(summary(m.tp.ANCOVA.int))),caption = "Post-test accuracy, 
 Summary for AA
 
   * main effect of pre-test accuracy -- higher accuracy in post-test if higher accuracy in pre-test
-  * main effect of sentence_type -- higher accuracy for training == D0
-  * marginal interaction of sentence_type and predictability -- higher accuracy if training == DO Pred
+  * **marginal** interaction of sentence_type and predictability -- higher accuracy if training == DO Pred
 
 Summary for AI
 
   * main effect of pre-test accuracy -- higher accuracy in post-test if higher accuracy in pre-test
 
 ```{r AAvs.AI}
-m.tp.ANCOVA.int.AA<-glmer(`accuracy.Post-test`~PC*SCC*ACC+(1|subject_id)+(1|verb),data=subset(all.tp.w,trial_animacy=="AA"), family="binomial", glmerControl(optimizer = "bobyqa"))
-#summary(m.tp.ANCOVA.int.AA)
+m.tp.ANCOVA.AA<-glmer(`accuracy.Post-test`~PC+SCC*ACC+(1|subject_id),data=subset(all.tp.w,trial_animacy=="AA"), family="binomial", glmerControl(optimizer = "bobyqa"))
 
-summary(m.tp.ANCOVA.int.AA)$call
-kable(data.frame(coef(summary(m.tp.ANCOVA.int.AA))),caption = "Post-test accuracy, controlling for Pre-test accuracy - Animate-Animate test trials only")
+summary(m.tp.ANCOVA.AA)$call
+kable(data.frame(coef(summary(m.tp.ANCOVA.AA))),caption = "Post-test accuracy, controlling for Pre-test accuracy - Animate-Animate test trials only")
 
-m.tp.ANCOVA.int.AI<-glmer(`accuracy.Post-test`~PC*SCC*ACC+(1|subject_id)+(1|verb),data=subset(all.tp.w,trial_animacy=="AI"), family="binomial", glmerControl(optimizer = "bobyqa"))
-#summary(m.tp.ANCOVA.int.AI)
+m.tp.ANCOVA.AI<-glmer(`accuracy.Post-test`~PC+SCC*ACC+(1|subject_id),data=subset(all.tp.w,trial_animacy=="AI"), family="binomial", glmerControl(optimizer = "bobyqa"))
 
-summary(m.tp.ANCOVA.int.AI)$call
-kable(data.frame(coef(summary(m.tp.ANCOVA.int.AI))),caption = "Post-test accuracy, controlling for Pre-test accuracy - Animate-Inanimate test trials only")
+summary(m.tp.ANCOVA.AI)$call
+kable(data.frame(coef(summary(m.tp.ANCOVA.AI))),caption = "Post-test accuracy, controlling for Pre-test accuracy - Animate-Inanimate test trials only")
 
 ```
 
+### DO vs. PO-trained groups
+
+Summary for DO-trained groups
+
+  * main effect of pre-test accuracy -- higher accuracy in post-test if higher accuracy in pre-test
+  
+  * main effect of trial animacy -- higher accuracy for AI test items
+  
+  * **marginal** main effect of animacy/predictability -- higher accuracy for participants trained on Predictable DOs than Unpredictable DOs
+
+Summary for PO-trained groups
+
+  * **marginal** main effect of pre-test accuracy -- higher accuracy in post-test if higher accuracy in pre-test
+
+  * main effect of trial animacy -- higher accuracy for AI test items
+
+
+```{r DOvs.PO}
+m.tp.ANCOVA.DO<-glmer(`accuracy.Post-test`~PC+ACC*TACC+(1|subject_id),data=subset(all.tp.w,sentence_type=="DO"), family="binomial", glmerControl(optimizer = "bobyqa"))
+
+summary(m.tp.ANCOVA.DO)$call
+kable(data.frame(coef(summary(m.tp.ANCOVA.DO))),caption = "Post-test accuracy, controlling for Pre-test accuracy - DO-trained groups only")
+
+m.tp.ANCOVA.PO<-glmer(`accuracy.Post-test`~PC+ACC*TACC+(1|subject_id),data=subset(all.tp.w,sentence_type=="PO"), family="binomial", glmerControl(optimizer = "bobyqa"))
+
+summary(m.tp.ANCOVA.PO)$call
+kable(data.frame(coef(summary(m.tp.ANCOVA.PO))),caption = "Post-test accuracy, controlling for Pre-test accuracy - PO-trained groups only")
+
+```
+
+
+## Power analysis
+```{r message=FALSE}
+##### Power calculations based on pilot data (first  wave)
+library(simr)
+#Load in data
+# first wave
+pre_data<-read.table("https://raw.githubusercontent.com/chiara-gambi/structbias/master/pilot_first_wave/compiled_data/pre-test.txt",header = T)
+post_data<-read.table("https://raw.githubusercontent.com/chiara-gambi/structbias/master/pilot_first_wave/compiled_data/post-test.txt",header= T)
+
+# List of animate-animate trials
+AA<-c("4Pre2","6Pre2","5Pre2","4Post2","5post2","6post2")
+#all other experimental trials are AI
+trials_animacy<-data.frame(trial_id= c("4Pre2","6Pre2","5Pre2","4Post2","5post2","6post2","1Pre2","2Pre2","3Pre2","1Post2","2post2","3post2"),trial_animacy=c(rep(c("AA","AI"),each=6)))
+
+#combine pre and post-test
+pre_data$phase<-"Pre-test"
+post_data$phase<-"Post-test"
+all_data<-rbind(pre_data,post_data)
+## exclude fillers (trial_type == posttest or pretest)
+all_data_exp<-all_data[all_data$trial_type=="posttest"|all_data$trial_type=="pretest",]
+## Add trial animacy info
+all_data_exp.tp<-merge(all_data_exp,trials_animacy,by="trial_id")
+
+all_data_exp.tp$verb<-"NA"
+all_data_exp.tp$verb<-ifelse(all_data_exp.tp$trial_id%in%c("1Pre2","6Pre2","2post2","5post2"),"bring",ifelse(all_data_exp.tp$trial_id%in%c("3Pre2","5Pre2","1Post2","4Post2"),"send",ifelse(all_data_exp.tp$trial_id%in%c("2Pre2","4Pre2","3post2","6post2"),"throw","NA")))
+all_data_exp.tp<-all_data_exp.tp[,-1]# remove trial_id column
+
+all.tp<-all_data_exp.tp[,c("subject_id","sentence_type","animacy","trial_animacy","accuracy","verb","order","phase")]
+all.tp.w<-reshape(all.tp, v.names="accuracy",timevar="phase",idvar=c("verb","subject_id","sentence_type","animacy","order","trial_animacy"), direction = "wide")
+
+all.tp.w$SC<-ifelse(all.tp.w$sentence_type=="PO",-.5,.5)
+all.tp.w$SCC<-scale(all.tp.w$SC,T,F)
+all.tp.w$AC<-ifelse(all.tp.w$animacy=="NonPred",-.5,.5)
+all.tp.w$ACC<-scale(all.tp.w$AC,T,F)
+all.tp.w$TAC<-ifelse(all.tp.w$trial_animacy=="AI",-.5,.5)
+all.tp.w$TACC<-scale(all.tp.w$TAC,T,F)
+all.tp.w$PC<-scale(all.tp.w$`accuracy.Pre-test`,T,F)
+
+# Power if we simplify the design to only DO (Pred vs. NonPred) and only AA with (a) current data, (b) double # items
+# create PowerCurve to determine optimal number of participants?
+
+#(a)
+names(all.tp.w)[7]<-"accuracyPost"
+m.tp.ANCOVA.int.AA.DO.noverbs<-glmer(accuracyPost~PC*ACC+(1|subject_id),data=subset(all.tp.w,trial_animacy=="AA"&sentence_type=="DO"), family="binomial", glmerControl(optimizer = "bobyqa"))
+#summary(m.tp.ANCOVA.int.AA.DO.noverbs)
+#power.simple<-powerSim(m.tp.ANCOVA.int.AA.DO.noverbs,test = fixed("ACC","z"),nsim=200)
+#power.simple
+# Power for predictor 'ACC', (95% confidence interval):
+#       62.50% (55.39, 69.23)
+# 
+# Test: z-test
+#       Effect size for ACC is 0.82
+# 
+# Based on 200 simulations, (0 warnings, 0 errors)
+# alpha = 0.05, nrow = 129
+# 
+# Time elapsed: 0 h 0 m 20 s
+# 
+# nb: result might be an observed power calculation
+
+#(b) Extend number of observations per verb from 1 to 2
+all.tp.w$verb<-as.factor(all.tp.w$verb)
+m.tp.ANCOVA.AA.DO<-glmer(accuracyPost~PC*ACC+(1|subject_id),data=subset(all.tp.w,trial_animacy=="AA"&sentence_type=="DO"), family="binomial",glmerControl(optimizer = "bobyqa"))
+#summary(m.tp.ANCOVA.AA.DO)
+m.moreitems<-extend(m.tp.ANCOVA.AA.DO,within="verb+ACC+PC+subject_id",n=2)
+#power.moreitems<-powerSim(m.moreitems,test = fixed("ACC","z"),nsim=200)
+#power.moreitems
+# Power for predictor 'ACC', (95% confidence interval):
+#       88.50% (83.25, 92.57)
+# 
+# Test: z-test
+#       Effect size for ACC is 0.82
+# 
+# Based on 200 simulations, (0 warnings, 0 errors)
+# alpha = 0.05, nrow = 258
+# 
+# Time elapsed: 0 h 0 m 22 s
+# 
+# nb: result might be an observed power calculation
+
+#power curve with only one observation per verb
+all.tp.w.AA.DO<-all.tp.w[all.tp.w$trial_animacy=="AA"&all.tp.w$sentence_type=="DO",]
+all.tp.w.AA.DO$subject_id<-factor(all.tp.w.AA.DO$subject_id)
+m.tp.ANCOVA.AA.DO.noverbs<-glmer(accuracyPost~PC*ACC+(1|subject_id),data=all.tp.w.AA.DO, family="binomial",glmerControl(optimizer = "bobyqa"))
+#summary(m.tp.ANCOVA.AA.DO.noverbs)
+
+m.moresubjects<-extend(m.tp.ANCOVA.AA.DO.noverbs, along = "subject_id",n = 80)
+#pc1<-powerCurve(m.moresubjects,test = fixed("ACC","z"),along="subject_id",breaks=c(30,40,50,60,70,80))
+#plot(pc1)
+
+
+#power curve with two observations per verb
+all.tp.w$verb<-as.factor(all.tp.w$verb)
+all.tp.w.AA.DO<-all.tp.w[all.tp.w$trial_animacy=="AA"&all.tp.w$sentence_type=="DO",]
+all.tp.w.AA.DO$subject_id<-factor(all.tp.w.AA.DO$subject_id)
+m.tp.ANCOVA.AA.DO<-glmer(accuracyPost~PC*ACC+(1|subject_id)+(1|verb),data=all.tp.w.AA.DO, family="binomial",glmerControl(optimizer = "bobyqa"))
+#summary(m.tp.ANCOVA.AA.DO)
+m.moreitems<-extend(m.tp.ANCOVA.AA.DO,within="verb+ACC+PC+subject_id",n=2)
+m.moresubjects2<-extend(m.moreitems, along = "subject_id",n = 80)
+#pc2<-powerCurve(m.moresubjects2,test = fixed("ACC","z"),along="subject_id",breaks=c(30,40,50,60,70,80))
+#plot(pc2)
+
+##assume d = 0.6 with two observations per verb
+fixef(m.moresubjects2)["ACC"]<-0.6
+#pc3<-powerCurve(m.moresubjects2,test = fixed("ACC","z"),along="subject_id",breaks=c(60,70,80))
+#plot(pc3)
+
+```
+
+```{r power curve1, echo=FALSE, fig.cap="power curve, 1 observation/verb, d = 0.82", out.width = '50%'}
+knitr::include_graphics("pc1.png")
+```
+
+```{r power curve2, echo=FALSE, fig.cap="power curve, 2 observation/verb, d = 0.82", out.width = '50%'}
+knitr::include_graphics("pc2.png")
+```
+
+```{r power curve3, echo=FALSE, fig.cap="power curve, 2 observation/verb, d = 0.6", out.width = '50%'}
+knitr::include_graphics("pc3.png")
+```
+```
